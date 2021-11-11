@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/labinstrumentos)](https://CRAN.R-project.org/package=labinstrumentos)
-[![R-CMD-check](https://github.com/matcasti/labinstrumentos/workflows/R-CMD-check/badge.svg)](https://github.com/matcasti/labinstrumentos/actions)
+[![R-CMD-check](https://github.com/SEREMICTCI/labinstrumentos/workflows/R-CMD-check/badge.svg)](https://github.com/matcasti/labinstrumentos/actions)
 <!-- badges: end -->
 
 The goal of labinstrumentos is to ...
