@@ -1,27 +1,18 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
 
 # labinstrumentos
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/labinstrumentos)](https://CRAN.R-project.org/package=labinstrumentos)
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/labinstrumentos)](https://CRAN.R-project.org/package=labinstrumentos)
 [![R-CMD-check](https://github.com/matcasti/labinstrumentos/workflows/R-CMD-check/badge.svg)](https://github.com/matcasti/labinstrumentos/actions)
 <!-- badges: end -->
 
-The goal of labinstrumentos is to ...
+The goal of labinstrumentos is to …
 
 ## Installation
 
@@ -36,6 +27,6 @@ devtools::install_github("matcasti/labinstrumentos")
 
 This is a basic example which shows you how to solve a common problem:
 
-```r
+``` r
 library(labinstrumentos)
 ```
