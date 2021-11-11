@@ -4,8 +4,8 @@ pkgdown_sha: ~
 articles:
   articles/eda: eda.html
   articles/network: network.html
-last_built: 2021-11-11T15:26Z
+last_built: 2021-11-11T15:29Z
 urls:
-  reference: https://matcasti.github.io/labinstrumentos/reference
-  article: https://matcasti.github.io/labinstrumentos/articles
+  reference: https://seremictci.github.io/labinstrumentos/reference
+  article: https://seremictci.github.io/labinstrumentos/articles
 
