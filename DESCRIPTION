@@ -6,7 +6,7 @@ Authors@R:
              comment = c(ORCID = "0000-0001-7291-247X")),
       person("Carlos", "Morales Quiroz", , "csmorales@minciencia.gob.cl", role = c("aut", "ctb")))
 Description: Datos, análisis y visualizaciones del laboratorio de intrumentos ANID.
-License: CC BY 4.0
+License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
