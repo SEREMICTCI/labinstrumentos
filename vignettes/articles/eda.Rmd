@@ -1,0 +1,29 @@
+---
+title: "Análisis exploratorio"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+# Nube de palabras
+
+<iframe width="100%" height="650" src="https://datastudio.google.com/embed/reporting/cfb9c5d3-d6b8-459c-9c57-5294e557ab2e/page/p_ma451j90oc" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+# Gráfico de frecuencias
+
+## Palabras únicas
+
+<iframe width="100%" height="650" src="https://datastudio.google.com/embed/reporting/8302c26d-92f6-4783-bfca-c74bc631adf9/page/p_cmpe28a1oc" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+## Dos palabras combinadas
+
+<iframe width="100%" height="650" src="https://datastudio.google.com/embed/reporting/7f2ed17b-d460-44d2-bb40-777709db1ead/page/p_jb4htme2oc" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+## Tres palabras combinadas
+
+<iframe width="100%" height="650" src="https://datastudio.google.com/embed/reporting/47d55f2d-bee3-4472-b72d-71ce7de9a380/page/p_xiukw616oc" frameborder="0" style="border:0" allowfullscreen></iframe>

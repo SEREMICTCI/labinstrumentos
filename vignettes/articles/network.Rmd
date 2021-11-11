@@ -1,0 +1,55 @@
+---
+title: "network"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+# Cargamos paquetes necesarios
+library(tm)
+library(igraph)
+library(data.table)
+
+# Y el paquete con los datos
+library(labinstrumentos)
+```
+
+# Problemas
+
+## Preparación variables
+
+```{r}
+## Creación de un corpus para posterior análisis
+m <- tm::Corpus(x = tm::VectorSource(x = unique(labinstrumentos$clean_problema) ) ) |> 
+  tm::TermDocumentMatrix(control = list(minWordLength = c(1, Inf) ) ) |> 
+  as.matrix();
+
+## Obtenemos aquellos términos que aparezcan almenos dos veces entre los problemas únicos
+m2 <- m[rowSums(m) > 1, ]
+
+## Y a aquellos problemas les asignamos el valor de 1 (es decir, se encuentra presente o no)
+m2[m2 > 1] <- 1
+
+## Calculamos la co-ocurrencia
+termM <- m2 %*% t(m2)
+
+## Creamos los nodos con sus respectivos vertices
+g <- igraph::graph.adjacency(termM, weighted = T, mode = 'undirected') |> 
+  igraph::simplify()
+
+## Le asignamos etiquetas a los nodos para mejor visualización
+igraph::V(g)$label <- igraph::V(g)$name
+
+## Le asignamos la propiedad degree (número de vertices adjacentes) al grafo
+igraph::V(g)$degree <- igraph::degree(g)
+```
+
+
+# Causas
+
+# Consecuencias
