@@ -31,6 +31,7 @@ lab_instrumentos[, names(lab_instrumentos) := lapply(.SD, gsub, pattern = "\\.",
 lab_instrumentos[, names(lab_instrumentos) := lapply(.SD, gsub, pattern = "\\,", replacement = "")]
 
 vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
+
 for (i in stopWords) {
   i_bound <- paste0("(?<!\\S)\\b", i, "\\b(?!\\S)")
   lab_instrumentos[, (vars) := lapply(.SD, gsub, pattern = i_bound, replacement = "", perl = T), .SDcols = vars]
