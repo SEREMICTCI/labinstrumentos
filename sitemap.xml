@@ -4,7 +4,25 @@
     <loc>https://seremictci.github.io/labinstrumentos/index.html</loc>
   </url>
   <url>
-    <loc>https://seremictci.github.io/labinstrumentos/reference/labinstrumentos.html</loc>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/grafico_red_circular.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/grafico_red_hubs.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/lab_instrumentos.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/labinstrumentos-package.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/red_comunidades_greedy.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/red_comunidades_spinglass.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/articles/articles/eda.html</loc>
