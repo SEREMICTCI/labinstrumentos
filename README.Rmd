@@ -8,12 +8,13 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
+  dpi = 300,
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
 ```
 
-# Datos y análisis del laboratorio de 
+# Datos y análisis del laboratorio de instrumentos
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -21,13 +22,30 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/SEREMICTCI/labinstrumentos/workflows/R-CMD-check/badge.svg)](https://github.com/SEREMICTCI/labinstrumentos/actions)
 <!-- badges: end -->
 
-Este paquete contiene los datos, y herramientas complementarias para el análisis y visualización de los datos del laboratorio de intrumentos.
+Este es un paquete de <i class="fab fa-r-project"></i> que contiene los datos procesados del laboratorio de intrumentos, así como herramientas complementarias para su análisis y visualización.
 
 ## Instalación
 
-Puedes instalar el paquete escribiendo en tu consola de `R`:
+Para instalar el paquete directamente a tu computadora, asegurate de tener instalado <i class="fab fa-r-project"></i>, luego escribe en tu consola de <i class="fab fa-r-project"></i> lo siguiente:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SEREMICTCI/labinstrumentos")
+```
+
+## Dependencias
+
+Este paquete, así como sus correspondientes análisis, dependen de los siguientes paquetes:
+
+```{r}
+# install.packages("deepdep")
+dependencies <- deepdep::deepdep("labinstrumentos", local = TRUE, depth = 3)
+deepdep::plot_dependencies(dependencies)
+```
+
+
+Para citar este paquete en publicaciones puedes correr la siguiente función en tu consola de <i class="fab fa-r-project"></i>:
+
+```{r}
+citation("labinstrumentos")
 ```

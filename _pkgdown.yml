@@ -3,3 +3,69 @@ url: https://seremictci.github.io/labinstrumentos
 template:
   params:
     bootswatch: flatly
+
+toc:
+  depth: 2
+
+navbar:
+  structure:
+    left: [home, reference, articles, datos]
+    right: [news, github]
+  components:
+    home:
+      icon: fa fa-home fa-lg
+      href: index.html
+    reference:
+      icon: fab fa-r-project fa-lg
+      text: Documentación
+      href: reference/index.html
+    news:
+      icon: fas fa-history fa-lg
+      href: news/index.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/SEREMICTCI/labinstrumentos/
+    articles:
+      icon: fa fa-fw fa-book fa-lg
+      text: Artículos
+      menu:
+      - text: Análisis exploratorio
+        href: articles/articles/eda.html
+      - text: Análisis de redes
+        href: articles/articles/network.html
+    datos:
+      icon: fas fa-database fa-lg
+      text: Datos
+      menu:
+      - text: Scripts
+      - text: Tratamiento de los datos
+        href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/data-raw/labinstrumentos.R
+      - text: Datos
+      - text: CSV
+        href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/data-raw/labinstrumentos.csv
+      - text: RDS (recomendado para R)
+        href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/data/labinstrumentos.rda?raw=true
+
+articles:
+- title: Todos los artículos
+  desc: Documentación vinculada al análisis de los datos del laboratorio de instrumentos.
+  contents:
+  - articles/eda
+  - articles/network
+
+reference:
+- title: Análisis de redes
+- subtitle: Creación de redes
+  contents:
+  - crear_redes_de_palabras
+- subtitle: Visualización de redes
+  contents:
+  - grafico_red_circular
+  - grafico_red_hubs
+- subtitle: Análisis de comunidades
+  contents:
+  - red_comunidades_greedy
+  - red_comunidades_spinglass
+- title: Datos
+  contents:
+  - lab_instrumentos

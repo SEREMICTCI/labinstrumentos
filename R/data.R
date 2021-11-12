@@ -17,4 +17,4 @@
 #'   - \code{region}: ...
 #'
 #' @source Los datos fueron recopilados del laboratorio de instrumentos.
-"labinstrumentos"
+"lab_instrumentos"
