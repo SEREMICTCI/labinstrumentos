@@ -8,7 +8,7 @@ knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
   fig.width = 12,
-  fig.height = 8,
+  fig.height = 12,
   out.width = "100%",
   dpi = 300,
   # dev = "png",
@@ -25,9 +25,12 @@ library(data.table)
 # Y el paquete con los datos
 library(labinstrumentos)
 
+# Variables de interés
 vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
 
-lab_instrumentos[, (vars) := lapply(.SD, gsub, pattern = "macrozona-austral", replacement = ""), .SDcols = vars]
+# Eliminamos el término macrozona-austral por se muy influyente
+lab_instrumentos[j = (vars) := lapply(.SD, gsub, pattern = "macrozona-austral", replacement = ""), 
+                 .SDcols = vars]
 ```
 
 # Problemas
@@ -89,7 +92,7 @@ grafico_red_hubs(red = red_causas)
 ### Algorítmo Spinglass
 
 ```{r}
-# red_comunidades_spinglass(red = red_causas) # Arroja un error, explorar por qué pasa esto
+red_comunidades_spinglass(red = red_causas)
 ```
 
 ### Algoritmo de optimización 'Greedy'
