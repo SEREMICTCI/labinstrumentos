@@ -4,13 +4,11 @@
 \alias{grafico_red_hubs}
 \title{Grafica una red usando score de Hubs}
 \usage{
-grafico_red_hubs(red, main = "Hubs")
+grafico_red_hubs(red)
 }
 \arguments{
 \item{red}{Un objeto de clase \code{igraph} resultante de la función \code{crear_redes_de_palabras()} o
 de procesos similares usando el paquete \code{igraph}.}
-
-\item{main}{Carácter. Título para el gráfico.}
 }
 \description{
 Utilizando un objeto resultante de la función \code{crear_redes_de_palabras()},

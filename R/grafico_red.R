@@ -6,16 +6,17 @@
 #'
 #' @param red Un objeto de clase `igraph` resultante de la función `crear_redes_de_palabras()` o
 #' de procesos similares usando el paquete `igraph`.
+#' @param vertex.cex multiplicador de tamaño de los nodos. Por defecto es 2.
 #'
 #' @importFrom igraph V layout.circle
 #' @export
 
-grafico_red_circular <- function(red) {
+grafico_red_circular <- function(red, vertex.cex = 2L) {
 
   if (!"igraph" %in% class(red)) stop("`red` DEBE ser un objeto de clase `igraph`")
 
   plot(x = red,
-       vertex.size = igraph::V(red)$degree * 2L,
+       vertex.size = igraph::V(red)$degree * vertex.cex,
        edge.arrow.size = 0.1,
        layout = igraph::layout.circle)
 }
@@ -28,13 +29,12 @@ grafico_red_circular <- function(red) {
 #'
 #' @param red Un objeto de clase `igraph` resultante de la función `crear_redes_de_palabras()` o
 #' de procesos similares usando el paquete `igraph`.
-#' @param main Carácter. Título para el gráfico.
 #'
 #' @importFrom igraph hub_score
 #' @importFrom grDevices rainbow
 #' @export
 
-grafico_red_hubs <- function(red, main = "Hubs") {
+grafico_red_hubs <- function(red) {
 
   if (!"igraph" %in% class(red)) stop("`red` DEBE ser un objeto de clase `igraph`")
 
@@ -42,6 +42,5 @@ grafico_red_hubs <- function(red, main = "Hubs") {
 
   plot(red,
        vertex.size = hs * 20L,
-       main = main,
        vertex.color = grDevices::rainbow(50))
 }

@@ -4,11 +4,13 @@
 \alias{grafico_red_circular}
 \title{Grafica una red con un layout circular}
 \usage{
-grafico_red_circular(red)
+grafico_red_circular(red, vertex.cex = 2L)
 }
 \arguments{
 \item{red}{Un objeto de clase \code{igraph} resultante de la función \code{crear_redes_de_palabras()} o
 de procesos similares usando el paquete \code{igraph}.}
+
+\item{vertex.cex}{multiplicador de tamaño de los nodos. Por defecto es 2.}
 }
 \description{
 Utilizando un objeto resultante de la función \code{crear_redes_de_palabras()},

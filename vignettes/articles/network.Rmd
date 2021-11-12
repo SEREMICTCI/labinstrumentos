@@ -78,7 +78,7 @@ red_causas <- crear_redes_de_palabras(
 ## Gráfico de redes circular
 
 ```{r}
-grafico_red_circular(red = red_causas)
+grafico_red_circular(red = red_causas, vertex.cex = 1L)
 ```
 
 ## Score de Hubs
@@ -112,7 +112,7 @@ red_consecuencias <- crear_redes_de_palabras(
 ## Gráfico de redes circular
 
 ```{r}
-grafico_red_circular(red = red_consecuencias)
+grafico_red_circular(red = red_consecuencias, vertex.cex = 1L)
 ```
 
 ## Score de Hubs
