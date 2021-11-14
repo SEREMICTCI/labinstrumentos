@@ -4,7 +4,8 @@ pkgdown_sha: ~
 articles:
   articles/eda: eda.html
   articles/network: network.html
-last_built: 2021-11-13T14:57Z
+  articles/sankey: sankey.html
+last_built: 2021-11-14T03:25Z
 urls:
   reference: https://seremictci.github.io/labinstrumentos/reference
   article: https://seremictci.github.io/labinstrumentos/articles
