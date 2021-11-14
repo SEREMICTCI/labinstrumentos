@@ -13,6 +13,8 @@ de procesos similares usando el paquete \code{igraph}.}
 \item{vertex.cex}{multiplicador de tamaño de los nodos. Por defecto es 2.}
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 Utilizando un objeto resultante de la función \code{crear_redes_de_palabras()},
 crea un gráfico de redes con una distribución espacial circular. Para esto,
 se usan bajo la capa la librería \code{igraph}.
