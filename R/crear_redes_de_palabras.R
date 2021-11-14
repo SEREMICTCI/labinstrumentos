@@ -1,5 +1,8 @@
 #' Crea redes usando algún vector de palabras u oraciones para ser analizadas
 #'
+#' @description
+#' `r lifecycle::badge("experimental")`
+#'
 #' Utilizando la librería `tm` y `igraph`, opta por un 'wrapper' para generar
 #' redes listas para ser utilizadas bajo el contexto de procesamiento de lenguaje
 #' natural.

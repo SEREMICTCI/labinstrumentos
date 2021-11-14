@@ -22,4 +22,5 @@ Imports:
     tm (>= 0.7.8),
     igraph (>= 1.2.7),
     data.table (>= 1.14.2),
-    grDevices
+    grDevices,
+    lifecycle

@@ -35,17 +35,25 @@ devtools::install_github("SEREMICTCI/labinstrumentos")
 
 ## Dependencias
 
-Este paquete, así como sus correspondientes análisis, dependen de los siguientes paquetes:
+Este paquete, así como sus correspondientes análisis, dependen de los siguientes paquetes.
 
-```{r}
-# install.packages("deepdep")
-dependencies <- deepdep::deepdep("labinstrumentos", local = TRUE, depth = 3)
-deepdep::plot_dependencies(dependencies)
+```{r echo=FALSE}
+if (requireNamespace("deepdep", quietly = TRUE)) {
+  dependencies <- deepdep::deepdep("labinstrumentos", local = TRUE, depth = 3L)
+  deepdep::plot_dependencies(dependencies)
+}
 ```
 
+## Reconocimiento
 
-Para citar este paquete en publicaciones puedes correr la siguiente función en tu consola de <i class="fab fa-r-project"></i>:
+Para citar este paquete en publicaciones puedes correr la siguiente función en tu consola de <i class="fab fa-r-project"></i>.
 
-```{r}
+```r
+citation("labinstrumentos")
+```
+
+Lo que te dará el siguiente resultado.
+
+```{r echo=FALSE, results='markup', comment=""}
 citation("labinstrumentos")
 ```

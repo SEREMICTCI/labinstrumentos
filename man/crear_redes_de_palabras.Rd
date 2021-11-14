@@ -10,6 +10,8 @@ crear_redes_de_palabras(x)
 \item{x}{Un vector de carácteres.}
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 Utilizando la librería \code{tm} y \code{igraph}, opta por un 'wrapper' para generar
 redes listas para ser utilizadas bajo el contexto de procesamiento de lenguaje
 natural.

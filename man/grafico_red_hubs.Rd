@@ -11,6 +11,8 @@ grafico_red_hubs(red)
 de procesos similares usando el paquete \code{igraph}.}
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 Utilizando un objeto resultante de la función \code{crear_redes_de_palabras()},
 crea un gráfico de redes usando el score de Hubs. Para esto,
 se usan bajo la capa la librería \code{igraph}.

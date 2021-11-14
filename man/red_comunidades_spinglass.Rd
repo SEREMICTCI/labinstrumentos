@@ -17,7 +17,9 @@ resultados reproducibles usando \code{set.seed()} por debajo.}
 'groups' (un vector con los grupos) o 'raw' (el objeto sin procesar de clase 'communities').}
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+
 Utilizando un objeto resultante de la función \code{crear_redes_de_palabras()},
-crea un gráfico de redes usando el score de Hubs. Para esto,
-se usan bajo la capa la librería \code{igraph}.
+crea un análisis de comunidades usando el algoritmo de Spinglass.
+Para esto, se usan bajo la capa la librería \code{igraph}.
 }

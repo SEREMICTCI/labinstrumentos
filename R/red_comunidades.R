@@ -1,8 +1,11 @@
 #' Análisis de comunidades usando algoritmo Spinglass
 #'
+#' @description
+#' `r lifecycle::badge("experimental")`
+#'
 #' Utilizando un objeto resultante de la función `crear_redes_de_palabras()`,
-#' crea un gráfico de redes usando el score de Hubs. Para esto,
-#' se usan bajo la capa la librería `igraph`.
+#' crea un análisis de comunidades usando el algoritmo de Spinglass.
+#' Para esto, se usan bajo la capa la librería `igraph`.
 #'
 #' @param red Un objeto de clase `igraph` resultante de la función `crear_redes_de_palabras()` o
 #' de procesos similares usando el paquete `igraph`.
@@ -42,9 +45,12 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
 
 #' Análisis de comunidades usando algoritmo optimization 'Greedy'
 #'
+#' @description
+#' `r lifecycle::badge("experimental")`
+#'
 #' Utilizando un objeto resultante de la función `crear_redes_de_palabras()`,
-#' crea un gráfico de redes usando el score de Hubs. Para esto,
-#' se usan bajo la capa la librería `igraph`.
+#' crea un análisis de comunidades usando el algoritmo de optimización 'greedy'.
+#' Para esto, se usan bajo la capa la librería `igraph`.
 #'
 #' @param red Un objeto de clase `igraph` resultante de la función `crear_redes_de_palabras()` o
 #' de procesos similares usando el paquete `igraph`.

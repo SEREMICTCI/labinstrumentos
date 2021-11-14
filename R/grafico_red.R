@@ -1,5 +1,8 @@
 #' Grafica una red con un layout circular
 #'
+#' @description
+#' `r lifecycle::badge("experimental")`
+#'
 #' Utilizando un objeto resultante de la función `crear_redes_de_palabras()`,
 #' crea un gráfico de redes con una distribución espacial circular. Para esto,
 #' se usan bajo la capa la librería `igraph`.
@@ -22,6 +25,9 @@ grafico_red_circular <- function(red, vertex.cex = 2L) {
 }
 
 #' Grafica una red usando score de Hubs
+#'
+#' @description
+#' `r lifecycle::badge("experimental")`
 #'
 #' Utilizando un objeto resultante de la función `crear_redes_de_palabras()`,
 #' crea un gráfico de redes usando el score de Hubs. Para esto,
