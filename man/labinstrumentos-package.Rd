@@ -4,9 +4,11 @@
 \name{labinstrumentos-package}
 \alias{labinstrumentos}
 \alias{labinstrumentos-package}
-\title{Datos del Laboratorio de Instrumentos}
+\title{Laboratorio de Instrumentos}
 \description{
-Datos, análisis y visualizaciones del laboratorio de intrumentos.
+El objetivo de este paquete es favoreces el libre acceso los datos y demás herramientas asistenciales
+para el análisis y así, generar una propuesta de recomendaciones a los instrumentos ANID más utilizados
+en la macrozona teniendo en cuenta las brechas regionales y el sistema CTCI local.
 }
 \seealso{
 Useful links:
