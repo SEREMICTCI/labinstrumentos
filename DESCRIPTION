@@ -25,4 +25,5 @@ Imports:
     grDevices,
     lifecycle,
     RWeka,
-    highcharter
+    highcharter,
+    rJava
