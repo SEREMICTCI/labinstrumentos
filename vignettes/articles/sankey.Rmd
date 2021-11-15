@@ -5,10 +5,42 @@ title: "Relaciones multidimensionales"
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  comment = "#>",
+  out.width = "100%"
 )
 ```
 
 ```{r setup}
 library(labinstrumentos)
+```
+
+# Interrelación de términos, instrumentos y su clasificación
+
+## Términos de una palabra
+
+```{r}
+crear_sankey(lab_instrumentos,
+             n_words = 1,     # Número de palabras juntas
+             freq_minima = 4, # Frecuencia mínima para la inclusión
+             height = 1250)   # Altura en píxeles del gráfico
+```
+
+## Términos de dos palabras
+
+```{r}
+crear_sankey(lab_instrumentos,
+             n_words = 2, 
+             freq_minima = 3)
+```
+
+## Términos de tres palabras
+
+```{r}
+crear_sankey(lab_instrumentos,
+             n_words = 3, 
+             freq_minima = 2, 
+             height = 1250)
 ```
