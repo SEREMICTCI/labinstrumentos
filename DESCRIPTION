@@ -1,7 +1,7 @@
 Package: labinstrumentos
 Title: Datos del Laboratorio de Instrumentos
 Date: 2021-11-13
-Version: 0.0.0.9001
+Version: 0.0.0.9010
 Authors@R: 
     c(person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
              comment = c(ORCID = "0000-0001-7291-247X")),
@@ -23,4 +23,6 @@ Imports:
     igraph (>= 1.2.7),
     data.table (>= 1.14.2),
     grDevices,
-    lifecycle
+    lifecycle,
+    RWeka,
+    highcharter
