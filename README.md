@@ -58,6 +58,6 @@ Lo que te dará el siguiente resultado.
         title = {labinstrumentos: Datos del Laboratorio de Instrumentos},
         author = {Matías {Castillo Aguilar} and Carlos {Morales Quiroz}},
         year = {2021},
-        note = {R package version 0.0.0.9001},
+        note = {R package version 0.0.0.9010},
         url = {https://github.com/SEREMICTCI/labinstrumentos},
       }
