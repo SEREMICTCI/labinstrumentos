@@ -1,3 +1,7 @@
+# labinstrumentos 0.0.0.9010
+
+* Se agrega función `crear_sankey()`, que facilita la creación de diagramas Sankey.
+
 # labinstrumentos 0.0.0.9001
 
 * Se incluyó argumento `vertex.cex` en la función `grafico_red_circular()` para personalizar el tamaño de los nodos.

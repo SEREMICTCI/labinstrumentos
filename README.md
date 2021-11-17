@@ -16,6 +16,14 @@ Este es un paquete de <i class="fab fa-r-project"></i> que contiene los
 datos procesados del laboratorio de intrumentos, así como herramientas
 complementarias para su análisis y visualización.
 
+## Sobre <i class="fab fa-r-project"></i>
+
+<i class="fab fa-r-project"></i>, es un lenguaje de programación
+estadística de alto nivel usado para el análisis de datos, así como para
+el desarrollo de herramientas informáticas como sitios web, reportes,
+aplicaciones, libros digitales, etc. Para más información puedes visitar
+el sitio de [R-project](https://www.r-project.org/about.html).
+
 ## Instalación
 
 Para instalar el paquete directamente a tu computadora, asegurate de
@@ -30,14 +38,14 @@ devtools::install_github("SEREMICTCI/labinstrumentos")
 ## Dependencias
 
 Este paquete, así como sus correspondientes análisis, dependen de los
-siguientes paquetes:
+siguientes paquetes.
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
 ## Reconocimiento
 
 Para citar este paquete en publicaciones puedes correr la siguiente
-función en tu consola de <i class="fab fa-r-project"></i>:
+función en tu consola de <i class="fab fa-r-project"></i>.
 
 ``` r
 citation("labinstrumentos")
@@ -50,7 +58,7 @@ Lo que te dará el siguiente resultado.
 
       Matías Castillo Aguilar and Carlos Morales Quiroz (2021).
       labinstrumentos: Datos del Laboratorio de Instrumentos. R package
-      version 0.0.0.9001. https://github.com/SEREMICTCI/labinstrumentos
+      version 0.0.0.9010. https://github.com/SEREMICTCI/labinstrumentos
 
     A BibTeX entry for LaTeX users is
 
@@ -58,6 +66,6 @@ Lo que te dará el siguiente resultado.
         title = {labinstrumentos: Datos del Laboratorio de Instrumentos},
         author = {Matías {Castillo Aguilar} and Carlos {Morales Quiroz}},
         year = {2021},
-        note = {R package version 0.0.0.9001},
+        note = {R package version 0.0.0.9010},
         url = {https://github.com/SEREMICTCI/labinstrumentos},
       }

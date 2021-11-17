@@ -37,6 +37,8 @@ navbar:
         href: articles/articles/eda.html
       - text: Análisis de redes
         href: articles/articles/network.html
+      - text: Diagramas de Sankey
+        href: articles/articles/sankey.html
     datos:
       icon: fas fa-database fa-lg
       text: Datos
@@ -54,12 +56,16 @@ articles:
 - title: Todos los artículos
   desc: Documentación vinculada al análisis de los datos del laboratorio de instrumentos.
   contents:
+  - articles/Data
   - articles/eda
   - articles/network
-  - articles/Data
+  - articles/sankey
 
 reference:
 - title: Análisis de redes
+- subtitle: Diagramas de Sankey
+  contents:
+  - crear_sankey
 - subtitle: Creación de redes
   contents:
   - crear_redes_de_palabras
