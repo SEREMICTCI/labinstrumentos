@@ -11,6 +11,8 @@ navbar:
   structure:
     left: [home, reference, articles, datos]
     right: [news, github]
+
+
   components:
     home:
       icon: fa fa-home fa-lg
@@ -29,6 +31,8 @@ navbar:
       icon: fa fa-fw fa-book fa-lg
       text: Artículos
       menu:
+      - text: Origen de los datos
+        href: articles/articles/Data.html
       - text: Análisis exploratorio
         href: articles/articles/eda.html
       - text: Análisis de redes
@@ -52,6 +56,7 @@ articles:
 - title: Todos los artículos
   desc: Documentación vinculada al análisis de los datos del laboratorio de instrumentos.
   contents:
+  - articles/Data
   - articles/eda
   - articles/network
   - articles/sankey

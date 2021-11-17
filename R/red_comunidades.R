@@ -43,6 +43,14 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
 }
 
 
+
+
+
+
+
+
+
+
 #' Análisis de comunidades usando algoritmo optimization 'Greedy'
 #'
 #' @description
