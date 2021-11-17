@@ -26,4 +26,6 @@ Imports:
     lifecycle,
     RWeka,
     highcharter,
-    rJava
+    rJava,
+    gsheet (>= 0.4.5),
+    stringi (>= 1.7.5)
