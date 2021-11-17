@@ -25,6 +25,9 @@ library(data.table)
 # Y el paquete con los datos
 library(labinstrumentos)
 
+# Descargamos la ultima versión de los datos
+lab_instrumentos <- obtener_datos()
+
 # Variables de interés
 vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
 

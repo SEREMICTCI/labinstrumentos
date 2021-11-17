@@ -15,6 +15,8 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(labinstrumentos)
+
+lab_instrumentos <- obtener_datos()
 ```
 
 # Interrelación de términos, instrumentos y su clasificación
@@ -25,7 +27,7 @@ library(labinstrumentos)
 crear_sankey(lab_instrumentos,
              n_words = 1,     # Número de palabras juntas
              freq_minima = 4, # Frecuencia mínima para la inclusión
-             height = 1250)   # Altura en píxeles del gráfico
+             height = 850)    # Altura en píxeles del gráfico
 ```
 
 ## Términos de dos palabras
@@ -33,7 +35,8 @@ crear_sankey(lab_instrumentos,
 ```{r}
 crear_sankey(lab_instrumentos,
              n_words = 2, 
-             freq_minima = 3)
+             freq_minima = 3,
+             height = 850)
 ```
 
 ## Términos de tres palabras
@@ -42,5 +45,5 @@ crear_sankey(lab_instrumentos,
 crear_sankey(lab_instrumentos,
              n_words = 3, 
              freq_minima = 2, 
-             height = 1250)
+             height = 850)
 ```
