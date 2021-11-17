@@ -71,7 +71,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">labinstrumentos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9010</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9011</span>
       </span>
     </div>
 
@@ -124,10 +124,7 @@
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Scripts</li>
     <li>
-      <a href="https://github.com/SEREMICTCI/labinstrumentos/blob/master/data-raw/lab_instrumentos.R">Tratamiento de los datos</a>
-    </li>
-    <li>
-      <a href="https://github.com/SEREMICTCI/labinstrumentos/blob/master/data/lab_instrumentos.rda?raw=true">RDS (recomendado para R)</a>
+      <a href="https://github.com/SEREMICTCI/labinstrumentos/blob/master/R/obtener_datos.R">Tratamiento de los datos</a>
     </li>
   </ul>
 </li>
@@ -162,6 +159,14 @@
       <small>Source: <a href='https://github.com/SEREMICTCI/labinstrumentos/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
+    <div id="labinstrumentos-0009011" class="section level1">
+<h1 class="page-header" data-toc-text="0.0.0.9011">
+<a href="#labinstrumentos-0009011" class="anchor"></a>labinstrumentos 0.0.0.9011</h1>
+<ul>
+<li>Se crea función <code><a href="../reference/obtener_datos.html">obtener_datos()</a></code> para descargar los datos en su última versión desde el documento de hojas de Google, tratando los datos y devolviéndolos limpios. Eventualmente y cuando se tenga la versión definitiva de los datos, se procederá por una alternativa local en el paquete.</li>
+<li>En relación a este último punto, se eliminó los datos almacenados de manera local en el paquete, dado que con la función <code><a href="../reference/obtener_datos.html">obtener_datos()</a></code> se puede acceder a una versión actualizada de ellos, eventualmente se recuperarán este modalidad cuando se disponga de una base de datos final.</li>
+</ul>
+</div>
     <div id="labinstrumentos-0009010" class="section level1">
 <h1 class="page-header" data-toc-text="0.0.0.9010">
 <a href="#labinstrumentos-0009010" class="anchor"></a>labinstrumentos 0.0.0.9010</h1>
