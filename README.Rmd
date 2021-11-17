@@ -20,7 +20,6 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/labinstrumentos)](https://CRAN.R-project.org/package=labinstrumentos)
 [![R-CMD-check](https://github.com/SEREMICTCI/labinstrumentos/workflows/R-CMD-check/badge.svg)](https://github.com/SEREMICTCI/labinstrumentos/actions)
-[![Codecov test coverage](https://codecov.io/gh/SEREMICTCI/labinstrumentos/branch/master/graph/badge.svg)](https://app.codecov.io/gh/SEREMICTCI/labinstrumentos?branch=master)
 <!-- badges: end -->
 
 Este es un paquete de <i class="fab fa-r-project"></i> que contiene los datos procesados del laboratorio de intrumentos, así como herramientas complementarias para su análisis y visualización.
@@ -42,7 +41,7 @@ devtools::install_github("SEREMICTCI/labinstrumentos")
 
 Este paquete, así como sus correspondientes análisis, dependen de los siguientes paquetes.
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.width=8, fig.height=6}
 if (requireNamespace("deepdep", quietly = TRUE)) {
   dependencies <- deepdep::deepdep("labinstrumentos", local = TRUE, depth = 3L)
   deepdep::plot_dependencies(dependencies)

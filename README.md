@@ -44,7 +44,7 @@ siguientes paquetes.
 ## Reconocimiento
 
 Para citar este paquete en publicaciones puedes correr la siguiente
-función en tu consola de <i class="fab fa-r-project"></i>.
+función en tu consola de `R`.
 
 ``` r
 citation("labinstrumentos")
