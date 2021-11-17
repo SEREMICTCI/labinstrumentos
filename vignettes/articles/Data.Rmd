@@ -21,4 +21,4 @@ knitr::opts_chunk$set(
 
 # Exploración de problemas, causas y consecuencias detectadas
 
-<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/c74c9ca2-bddb-4f02-8e68-4cbaf2dcf1af/page/lreeC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="100%" height="650" src="https://datastudio.google.com/embed/reporting/c74c9ca2-bddb-4f02-8e68-4cbaf2dcf1af/page/lreeC" frameborder="0" style="border:0" allowfullscreen></iframe>

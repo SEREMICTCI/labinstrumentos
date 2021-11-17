@@ -61,12 +61,6 @@ grafico_red_hubs(red = red_problemas)
 red_comunidades_spinglass(red = red_problemas)
 ```
 
-### Algoritmo de optimización 'Greedy'
-
-```{r}
-red_comunidades_greedy(red = red_problemas)
-```
-
 # Causas
 
 ```{r}
@@ -93,12 +87,6 @@ grafico_red_hubs(red = red_causas)
 
 ```{r}
 red_comunidades_spinglass(red = red_causas)
-```
-
-### Algoritmo de optimización 'Greedy'
-
-```{r}
-red_comunidades_greedy(red = red_causas)
 ```
 
 # Consecuencias
@@ -128,11 +116,3 @@ grafico_red_hubs(red = red_consecuencias)
 ```{r}
 red_comunidades_spinglass(red = red_consecuencias)
 ```
-
-### Algoritmo de optimización 'Greedy'
-
-```{r}
-red_comunidades_greedy(red = red_consecuencias)
-```
-
-
