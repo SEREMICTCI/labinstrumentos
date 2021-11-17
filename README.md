@@ -18,17 +18,16 @@ complementarias para su análisis y visualización.
 
 ## Sobre <i class="fab fa-r-project"></i>
 
-<i class="fab fa-r-project"></i>, es un lenguaje de programación
-estadística de alto nivel usado para el análisis de datos, así como para
-el desarrollo de herramientas informáticas como sitios web, reportes,
-aplicaciones, libros digitales, etc. Para más información puedes visitar
-el sitio de [R-project](https://www.r-project.org/about.html).
+`R` es un lenguaje de programación estadística de alto nivel usado para
+el análisis de datos, así como para el desarrollo de herramientas
+informáticas como sitios web, reportes, aplicaciones, libros digitales,
+etc. Para más información puedes visitar el sitio de
+[R-project](https://www.r-project.org/about.html).
 
 ## Instalación
 
 Para instalar el paquete directamente a tu computadora, asegurate de
-tener instalado <i class="fab fa-r-project"></i>, luego escribe en tu
-consola de <i class="fab fa-r-project"></i> lo siguiente:
+tener instalado `R`, luego escribe en tu consola de `R` lo siguiente:
 
 ``` r
 # install.packages("devtools")
@@ -58,7 +57,7 @@ Lo que te dará el siguiente resultado.
 
       Matías Castillo Aguilar and Carlos Morales Quiroz (2021).
       labinstrumentos: Datos del Laboratorio de Instrumentos. R package
-      version 0.0.0.9010. https://github.com/SEREMICTCI/labinstrumentos
+      version 0.0.0.9011. https://github.com/SEREMICTCI/labinstrumentos
 
     A BibTeX entry for LaTeX users is
 
@@ -66,6 +65,6 @@ Lo que te dará el siguiente resultado.
         title = {labinstrumentos: Datos del Laboratorio de Instrumentos},
         author = {Matías {Castillo Aguilar} and Carlos {Morales Quiroz}},
         year = {2021},
-        note = {R package version 0.0.0.9010},
+        note = {R package version 0.0.0.9011},
         url = {https://github.com/SEREMICTCI/labinstrumentos},
       }

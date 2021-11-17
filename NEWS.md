@@ -1,3 +1,8 @@
+# labinstrumentos 0.0.0.9011
+
+* Se crea función `obtener_datos()` para descargar los datos en su última versión desde el documento de hojas de Google, tratando los datos y devolviéndolos limpios. Eventualmente y cuando se tenga la versión definitiva de los datos, se procederá por una alternativa local en el paquete.
+* En relación a este último punto, se eliminó los datos almacenados de manera local en el paquete, dado que con la función `obtener_datos()` se puede acceder a una versión actualizada de ellos, eventualmente se recuperarán este modalidad cuando se disponga de una base de datos final.
+
 # labinstrumentos 0.0.0.9010
 
 * Se agrega función `crear_sankey()`, que facilita la creación de diagramas Sankey.

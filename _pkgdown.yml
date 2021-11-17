@@ -45,12 +45,7 @@ navbar:
       menu:
       - text: Scripts
       - text: Tratamiento de los datos
-        href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/data-raw/lab_instrumentos.R
-  #   - text: Datos
-  #   - text: CSV
-  #     href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/data-raw/lab_instrumentos.csv
-      - text: RDS (recomendado para R)
-        href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/data/lab_instrumentos.rda?raw=true
+        href: https://github.com/SEREMICTCI/labinstrumentos/blob/master/R/obtener_datos.R
 
 articles:
 - title: Todos los artículos

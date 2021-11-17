@@ -20,17 +20,18 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/labinstrumentos)](https://CRAN.R-project.org/package=labinstrumentos)
 [![R-CMD-check](https://github.com/SEREMICTCI/labinstrumentos/workflows/R-CMD-check/badge.svg)](https://github.com/SEREMICTCI/labinstrumentos/actions)
+[![Codecov test coverage](https://codecov.io/gh/SEREMICTCI/labinstrumentos/branch/master/graph/badge.svg)](https://app.codecov.io/gh/SEREMICTCI/labinstrumentos?branch=master)
 <!-- badges: end -->
 
 Este es un paquete de <i class="fab fa-r-project"></i> que contiene los datos procesados del laboratorio de intrumentos, así como herramientas complementarias para su análisis y visualización.
 
 ## Sobre <i class="fab fa-r-project"></i>
 
-<i class="fab fa-r-project"></i>, es un lenguaje de programación estadística de alto nivel usado para el análisis de datos, así como para el desarrollo de herramientas informáticas como sitios web, reportes, aplicaciones, libros digitales, etc. Para más información puedes visitar el sitio de [R-project](https://www.r-project.org/about.html).
+`R` es un lenguaje de programación estadística de alto nivel usado para el análisis de datos, así como para el desarrollo de herramientas informáticas como sitios web, reportes, aplicaciones, libros digitales, etc. Para más información puedes visitar el sitio de [R-project](https://www.r-project.org/about.html).
 
 ## Instalación
 
-Para instalar el paquete directamente a tu computadora, asegurate de tener instalado <i class="fab fa-r-project"></i>, luego escribe en tu consola de <i class="fab fa-r-project"></i> lo siguiente:
+Para instalar el paquete directamente a tu computadora, asegurate de tener instalado `R`, luego escribe en tu consola de `R` lo siguiente:
 
 ``` r
 # install.packages("devtools")
@@ -50,7 +51,7 @@ if (requireNamespace("deepdep", quietly = TRUE)) {
 
 ## Reconocimiento
 
-Para citar este paquete en publicaciones puedes correr la siguiente función en tu consola de <i class="fab fa-r-project"></i>.
+Para citar este paquete en publicaciones puedes correr la siguiente función en tu consola de `R`.
 
 ```r
 citation("labinstrumentos")
