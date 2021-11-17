@@ -60,6 +60,9 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
+      <a href="../../articles/articles/Data.html">Origen de los datos</a>
+    </li>
+    <li>
       <a href="../../articles/articles/eda.html">Análisis exploratorio</a>
     </li>
     <li>
@@ -175,35 +178,28 @@
 <code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_spinglass.html">red_comunidades_spinglass</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_problemas</span><span class="op">)</span></code></pre></div>
 <p><img src="network_files/figure-html/unnamed-chunk-6-1.png" width="100%"></p>
 </div>
-<div id="algoritmo-de-optimización-greedy" class="section level3">
-<h3 class="hasAnchor">
-<a href="#algoritmo-de-optimizaci%C3%B3n-greedy" class="anchor"></a>Algoritmo de optimización ‘Greedy’</h3>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_greedy.html">red_comunidades_greedy</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_problemas</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-7-1.png" width="100%"></p>
-</div>
 </div>
 </div>
 <div id="causas" class="section level1">
 <h1 class="hasAnchor">
 <a href="#causas" class="anchor"></a>Causas</h1>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">red_causas</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/crear_redes_de_palabras.html">crear_redes_de_palabras</a></span><span class="op">(</span>
   x <span class="op">=</span> <span class="va">lab_instrumentos</span><span class="op">$</span><span class="va">clean_causa</span>
 <span class="op">)</span></code></pre></div>
 <div id="gráfico-de-redes-circular-1" class="section level2">
 <h2 class="hasAnchor">
 <a href="#gr%C3%A1fico-de-redes-circular-1" class="anchor"></a>Gráfico de redes circular</h2>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/grafico_red_circular.html">grafico_red_circular</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_causas</span>, vertex.cex <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-9-1.png" width="100%"></p>
+<p><img src="network_files/figure-html/unnamed-chunk-8-1.png" width="100%"></p>
 </div>
 <div id="score-de-hubs-1" class="section level2">
 <h2 class="hasAnchor">
 <a href="#score-de-hubs-1" class="anchor"></a>Score de Hubs</h2>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/grafico_red_hubs.html">grafico_red_hubs</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_causas</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-10-1.png" width="100%"></p>
+<p><img src="network_files/figure-html/unnamed-chunk-9-1.png" width="100%"></p>
 </div>
 <div id="detección-de-comunidades-1" class="section level2">
 <h2 class="hasAnchor">
@@ -211,39 +207,32 @@
 <div id="algorítmo-spinglass-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#algor%C3%ADtmo-spinglass-1" class="anchor"></a>Algorítmo Spinglass</h3>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_spinglass.html">red_comunidades_spinglass</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_causas</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-11-1.png" width="100%"></p>
-</div>
-<div id="algoritmo-de-optimización-greedy-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#algoritmo-de-optimizaci%C3%B3n-greedy-1" class="anchor"></a>Algoritmo de optimización ‘Greedy’</h3>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_greedy.html">red_comunidades_greedy</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_causas</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-12-1.png" width="100%"></p>
+<p><img src="network_files/figure-html/unnamed-chunk-10-1.png" width="100%"></p>
 </div>
 </div>
 </div>
 <div id="consecuencias" class="section level1">
 <h1 class="hasAnchor">
 <a href="#consecuencias" class="anchor"></a>Consecuencias</h1>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">red_consecuencias</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/crear_redes_de_palabras.html">crear_redes_de_palabras</a></span><span class="op">(</span>
   x <span class="op">=</span> <span class="va">lab_instrumentos</span><span class="op">$</span><span class="va">clean_consecuencia</span>
 <span class="op">)</span></code></pre></div>
 <div id="gráfico-de-redes-circular-2" class="section level2">
 <h2 class="hasAnchor">
 <a href="#gr%C3%A1fico-de-redes-circular-2" class="anchor"></a>Gráfico de redes circular</h2>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/grafico_red_circular.html">grafico_red_circular</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_consecuencias</span>, vertex.cex <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-14-1.png" width="100%"></p>
+<p><img src="network_files/figure-html/unnamed-chunk-12-1.png" width="100%"></p>
 </div>
 <div id="score-de-hubs-2" class="section level2">
 <h2 class="hasAnchor">
 <a href="#score-de-hubs-2" class="anchor"></a>Score de Hubs</h2>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/grafico_red_hubs.html">grafico_red_hubs</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_consecuencias</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-15-1.png" width="100%"></p>
+<p><img src="network_files/figure-html/unnamed-chunk-13-1.png" width="100%"></p>
 </div>
 <div id="detección-de-comunidades-2" class="section level2">
 <h2 class="hasAnchor">
@@ -251,16 +240,9 @@
 <div id="algorítmo-spinglass-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#algor%C3%ADtmo-spinglass-2" class="anchor"></a>Algorítmo Spinglass</h3>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_spinglass.html">red_comunidades_spinglass</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_consecuencias</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-16-1.png" width="100%"></p>
-</div>
-<div id="algoritmo-de-optimización-greedy-2" class="section level3">
-<h3 class="hasAnchor">
-<a href="#algoritmo-de-optimizaci%C3%B3n-greedy-2" class="anchor"></a>Algoritmo de optimización ‘Greedy’</h3>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_greedy.html">red_comunidades_greedy</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_consecuencias</span><span class="op">)</span></code></pre></div>
-<p><img src="network_files/figure-html/unnamed-chunk-17-1.png" width="100%"></p>
+<p><img src="network_files/figure-html/unnamed-chunk-14-1.png" width="100%"></p>
 </div>
 </div>
 </div>
