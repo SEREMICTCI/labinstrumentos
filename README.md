@@ -16,6 +16,14 @@ Este es un paquete de <i class="fab fa-r-project"></i> que contiene los
 datos procesados del laboratorio de intrumentos, así como herramientas
 complementarias para su análisis y visualización.
 
+## Sobre <i class="fab fa-r-project"></i>
+
+<i class="fab fa-r-project"></i>, es un lenguaje de programación
+estadística de alto nivel usado para el análisis de datos, así como para
+el desarrollo de herramientas informáticas como sitios web, reportes,
+aplicaciones, libros digitales, etc. Para más información puedes visitar
+el sitio de [R-project](https://www.r-project.org/about.html).
+
 ## Instalación
 
 Para instalar el paquete directamente a tu computadora, asegurate de
@@ -30,14 +38,14 @@ devtools::install_github("SEREMICTCI/labinstrumentos")
 ## Dependencias
 
 Este paquete, así como sus correspondientes análisis, dependen de los
-siguientes paquetes:
+siguientes paquetes.
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
 ## Reconocimiento
 
 Para citar este paquete en publicaciones puedes correr la siguiente
-función en tu consola de <i class="fab fa-r-project"></i>:
+función en tu consola de <i class="fab fa-r-project"></i>.
 
 ``` r
 citation("labinstrumentos")
