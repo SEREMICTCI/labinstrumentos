@@ -16,7 +16,12 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(labinstrumentos)
 
-lab_instrumentos <- obtener_datos()
+lab_instrumentos <- obtener_datos()[region == 1]
+
+vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
+
+lab_instrumentos[j = (vars) := lapply(.SD, gsub, pattern = "macrozona-austral", replacement = ""), 
+                 .SDcols = vars]
 ```
 
 # Interrelación de términos, instrumentos y su clasificación

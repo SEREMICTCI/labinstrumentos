@@ -16,11 +16,11 @@ crear_sankey(
 \arguments{
 \item{datos}{Datos usados para la generación del gráfico.}
 
-\item{n_words}{Del total de palabras, escoger las primeras \code{top} de mayor a menor. Por defecto es 15.}
+\item{n_words}{Número de palabras combinadas. Por defecto es 1.}
 
-\item{top}{Del total de palabras, escoger las primeras \code{top} de mayor a menor. Por defecto es 15.}
+\item{top}{Del total de palabras, escoger las primeras \code{top} de mayor a menor. Por defecto es Inf.}
 
-\item{freq_minima}{Frecuencia mínima de palabras para filtrar. Por defecto es 8.}
+\item{freq_minima}{Frecuencia mínima de palabras para filtrar. Por defecto es 3.}
 
 \item{vars}{Variables para visualizar. Por defecto son las variables \code{clean_problema}, \code{clean_causa} y \code{clean_consecuencia}.}
 

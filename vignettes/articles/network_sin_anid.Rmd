@@ -34,6 +34,12 @@ vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
 # Eliminamos el término macrozona-austral por se muy influyente
 lab_instrumentos[j = (vars) := lapply(.SD, gsub, pattern = "macrozona-austral", replacement = ""), 
                  .SDcols = vars]
+
+# Eliminamos el término anid por se muy influyente
+lab_instrumentos[j = (vars) := lapply(.SD, gsub, pattern = "anid", replacement = ""), 
+                 .SDcols = vars]
+
+
 ```
 
 # Problemas
@@ -58,10 +64,10 @@ grafico_red_hubs(red = red_problemas)
 
 ## Detección de comunidades
 
-### Algorítmo Spinglass
+### Algorítmo 'Greedy'
 
 ```{r}
-red_comunidades_spinglass(red = red_problemas)
+red_comunidades_greedy(red = red_problemas)
 ```
 
 # Causas
@@ -86,10 +92,10 @@ grafico_red_hubs(red = red_causas)
 
 ## Detección de comunidades
 
-### Algorítmo Spinglass
+### Algorítmo 'Greedy'
 
 ```{r}
-red_comunidades_spinglass(red = red_causas)
+red_comunidades_greedy(red = red_causas)
 ```
 
 # Consecuencias
@@ -114,8 +120,8 @@ grafico_red_hubs(red = red_consecuencias)
 
 ## Detección de comunidades
 
-### Algorítmo Spinglass
+### Algorítmo 'Greedy'
 
 ```{r}
-red_comunidades_spinglass(red = red_consecuencias)
+red_comunidades_greedy(red = red_consecuencias)
 ```

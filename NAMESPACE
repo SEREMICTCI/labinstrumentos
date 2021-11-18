@@ -2,6 +2,7 @@
 
 export(crear_redes_de_palabras)
 export(crear_sankey)
+export(get_terms)
 export(grafico_red_circular)
 export(grafico_red_hubs)
 export(obtener_datos)
