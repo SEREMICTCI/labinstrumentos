@@ -108,8 +108,16 @@ la relación entre términos de palabras" />
     <li>
       <a href="../articles/articles/eda.html">Análisis exploratorio</a>
     </li>
-    <li>
-      <a href="../articles/articles/network.html">Análisis de redes</a>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Análisis de redes</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="../articles/articles/network.html">Con ANID</a>
+        </li>
+        <li>
+          <a href="../articles/articles/network_sin_anid.html">Sin ANID</a>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="../articles/articles/sankey.html">Diagramas de Sankey</a>
@@ -187,15 +195,15 @@ la relación entre términos de palabras</p>
     </tr>
     <tr>
       <th>n_words</th>
-      <td><p>Del total de palabras, escoger las primeras <code>top</code> de mayor a menor. Por defecto es 15.</p></td>
+      <td><p>Número de palabras combinadas. Por defecto es 1.</p></td>
     </tr>
     <tr>
       <th>top</th>
-      <td><p>Del total de palabras, escoger las primeras <code>top</code> de mayor a menor. Por defecto es 15.</p></td>
+      <td><p>Del total de palabras, escoger las primeras <code>top</code> de mayor a menor. Por defecto es Inf.</p></td>
     </tr>
     <tr>
       <th>freq_minima</th>
-      <td><p>Frecuencia mínima de palabras para filtrar. Por defecto es 8.</p></td>
+      <td><p>Frecuencia mínima de palabras para filtrar. Por defecto es 3.</p></td>
     </tr>
     <tr>
       <th>vars</th>

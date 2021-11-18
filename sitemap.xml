@@ -10,6 +10,9 @@
     <loc>https://seremictci.github.io/labinstrumentos/reference/crear_sankey.html</loc>
   </url>
   <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/get_terms.html</loc>
+  </url>
+  <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/grafico_red_circular.html</loc>
   </url>
   <url>
@@ -35,6 +38,9 @@
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/articles/articles/network.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/articles/network_sin_anid.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/articles/articles/sankey.html</loc>
