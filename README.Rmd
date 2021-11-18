@@ -41,7 +41,7 @@ devtools::install_github("SEREMICTCI/labinstrumentos")
 
 Este paquete, así como sus correspondientes análisis, dependen de los siguientes paquetes.
 
-```{r echo=FALSE, fig.width=8, fig.height=6}
+```{r echo=FALSE, fig.width=12, fig.height=8}
 if (requireNamespace("deepdep", quietly = TRUE)) {
   dependencies <- deepdep::deepdep("labinstrumentos", local = TRUE, depth = 3L)
   deepdep::plot_dependencies(dependencies)
