@@ -180,10 +180,10 @@ la relación entre términos de palabras</p>
     <pre class="usage"><span class='fu'>crear_sankey</span><span class='op'>(</span>
   <span class='va'>datos</span>,
   n_words <span class='op'>=</span> <span class='fl'>1</span>,
-  top <span class='op'>=</span> <span class='cn'>Inf</span>,
   freq_minima <span class='op'>=</span> <span class='fl'>3</span>,
   vars <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"clean_problema"</span>, <span class='st'>"clean_causa"</span>, <span class='st'>"clean_consecuencia"</span><span class='op'>)</span>,
-  height <span class='op'>=</span> <span class='fl'>1000</span>
+  height <span class='op'>=</span> <span class='fl'>1000</span>,
+  output <span class='op'>=</span> <span class='st'>"grafico"</span>
 <span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -198,10 +198,6 @@ la relación entre términos de palabras</p>
       <td><p>Número de palabras combinadas. Por defecto es 1.</p></td>
     </tr>
     <tr>
-      <th>top</th>
-      <td><p>Del total de palabras, escoger las primeras <code>top</code> de mayor a menor. Por defecto es Inf.</p></td>
-    </tr>
-    <tr>
       <th>freq_minima</th>
       <td><p>Frecuencia mínima de palabras para filtrar. Por defecto es 3.</p></td>
     </tr>
@@ -212,6 +208,11 @@ la relación entre términos de palabras</p>
     <tr>
       <th>height</th>
       <td><p>Altura en píxeles del gråfico.</p></td>
+    </tr>
+    <tr>
+      <th>output</th>
+      <td><p>Carácter de longitud uno. Tipo de objeto resultante. Las opciones
+son <code>"grafico"</code> (por defecto), <code>"df_largo"</code>, <code>"df_corto"</code>.</p></td>
     </tr>
     </table>
 
