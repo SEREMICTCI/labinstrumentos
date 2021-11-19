@@ -1,3 +1,8 @@
+# labinstrumentos 0.0.0.9012
+
+* Arreglado error de comprobación de errores en `crear_sankey()`: Ahora el error con n_words < 0 entrega el mensaje de error apropiado.
+* Cambio de dependencias: Se eliminó las dependencias de `RWeka`, usando `NLP` en cambio. Esto para mejorar la compatibilidad multiplataforma y solucionar el problema del R-CMD-check ocasionado por la subdependencia con `rJava`.
+
 # labinstrumentos 0.0.0.9011
 
 * Se crea función `obtener_datos()` para descargar los datos en su última versión desde el documento de hojas de Google, tratando los datos y devolviéndolos limpios. Eventualmente y cuando se tenga la versión definitiva de los datos, se procederá por una alternativa local en el paquete.
