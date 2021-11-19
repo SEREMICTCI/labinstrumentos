@@ -31,7 +31,7 @@ lab_instrumentos[j = (vars) := lapply(.SD, gsub, pattern = "macrozona-austral", 
 ```{r}
 crear_sankey(lab_instrumentos,
              n_words = 1,     # Número de palabras juntas
-             freq_minima = 4, # Frecuencia mínima para la inclusión
+             freq_minima = 10, # Frecuencia mínima para la inclusión
              height = 850)    # Altura en píxeles del gráfico
 ```
 
@@ -40,7 +40,7 @@ crear_sankey(lab_instrumentos,
 ```{r}
 crear_sankey(lab_instrumentos,
              n_words = 2, 
-             freq_minima = 3,
+             freq_minima = 6,
              height = 850)
 ```
 
@@ -49,6 +49,6 @@ crear_sankey(lab_instrumentos,
 ```{r}
 crear_sankey(lab_instrumentos,
              n_words = 3, 
-             freq_minima = 2, 
+             freq_minima = 4, 
              height = 850)
 ```
