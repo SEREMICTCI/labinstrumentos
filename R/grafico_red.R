@@ -12,13 +12,14 @@
 #' @param vertex.cex multiplicador de tamaño de los nodos. Por defecto es 2.
 #'
 #' @importFrom igraph V layout.circle
+#' @importFrom graphics plot
 #' @export
 
 grafico_red_circular <- function(red, vertex.cex = 2L) {
 
   if (!"igraph" %in% class(red)) stop("`red` DEBE ser un objeto de clase `igraph`")
 
-  plot(x = red,
+  graphics::plot(x = red,
        vertex.size = igraph::V(red)$degree * vertex.cex,
        edge.arrow.size = 0.1,
        layout = igraph::layout.circle)
@@ -38,6 +39,7 @@ grafico_red_circular <- function(red, vertex.cex = 2L) {
 #'
 #' @importFrom igraph hub_score
 #' @importFrom grDevices rainbow
+#' @importFrom graphics plot
 #' @export
 
 grafico_red_hubs <- function(red) {
@@ -46,7 +48,7 @@ grafico_red_hubs <- function(red) {
 
   hs <- igraph::hub_score(red, weights = NA)$vector
 
-  plot(red,
+  graphics::plot(red,
        vertex.size = hs * 20L,
        vertex.color = grDevices::rainbow(50))
 }

@@ -57,7 +57,7 @@ Lo que te dará el siguiente resultado.
 
       Matías Castillo Aguilar and Carlos Morales Quiroz (2021).
       labinstrumentos: Datos del Laboratorio de Instrumentos. R package
-      version 0.0.0.9011. https://github.com/SEREMICTCI/labinstrumentos
+      version 0.0.0.9012. https://github.com/SEREMICTCI/labinstrumentos
 
     A BibTeX entry for LaTeX users is
 
@@ -65,6 +65,6 @@ Lo que te dará el siguiente resultado.
         title = {labinstrumentos: Datos del Laboratorio de Instrumentos},
         author = {Matías {Castillo Aguilar} and Carlos {Morales Quiroz}},
         year = {2021},
-        note = {R package version 0.0.0.9011},
+        note = {R package version 0.0.0.9012},
         url = {https://github.com/SEREMICTCI/labinstrumentos},
       }

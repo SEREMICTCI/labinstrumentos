@@ -16,6 +16,7 @@
 #'
 #' @importFrom igraph cluster_spinglass membership
 #' @importFrom data.table data.table
+#' @importFrom graphics plot
 #' @export
 
 red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
@@ -27,7 +28,7 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
 
   if (output == "plot") {
 
-    plot(spinglass, red, vertex.size = 8)
+    graphics::plot(spinglass, red, vertex.size = 8)
 
   } else if (output == "groups") {
 
@@ -41,15 +42,6 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
 
   } else stop("`output` DEBE ser uno de estos: 'plot', 'groups' o 'raw'")
 }
-
-
-
-
-
-
-
-
-
 
 #' Análisis de comunidades usando algoritmo optimization 'Greedy'
 #'
@@ -69,6 +61,7 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
 #'
 #' @importFrom igraph cluster_fast_greedy as.undirected membership
 #' @importFrom data.table data.table
+#' @importFrom graphics plot
 #' @export
 
 red_comunidades_greedy <- function(red, seed = 12345, output = "plot") {
@@ -82,7 +75,7 @@ red_comunidades_greedy <- function(red, seed = 12345, output = "plot") {
 
   if (output == "plot") {
 
-    plot(greedy, red, vertex.size = 8)
+    graphics::plot(greedy, red, vertex.size = 8)
 
   } else if (output == "groups") {
 
