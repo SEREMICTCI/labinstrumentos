@@ -173,6 +173,9 @@
 <ul>
 <li>Arreglado error de comprobación de errores en <code><a href="../reference/crear_sankey.html">crear_sankey()</a></code>: Ahora el error con n_words &lt; 0 entrega el mensaje de error apropiado.</li>
 <li>Cambio de dependencias: Se eliminó las dependencias de <code>RWeka</code>, usando <code>NLP</code> en cambio. Esto para mejorar la compatibilidad multiplataforma y solucionar el problema del R-CMD-check ocasionado por la subdependencia con <code>rJava</code>.</li>
+<li>Se eliminó el argumento <code>top</code> en <code><a href="../reference/crear_sankey.html">crear_sankey()</a></code> debido a que era un vestigio de funciones que usaban otros paquetes en versiones anteriores.</li>
+<li>Se incluye argumento <code>output</code> en <code><a href="../reference/crear_sankey.html">crear_sankey()</a></code> para obtener productos intermedios de la función, como los datos en formato largo (repetido) o corto (con columna de frecuencias) para otros procedimientos.</li>
+<li>Corrección de error en función <code><a href="../reference/crear_sankey.html">crear_sankey()</a></code>: Se corrigió un problema con el filtrado por frecuencias (más detalles <a href="https://github.com/SEREMICTCI/labinstrumentos/commit/336d182a702deda227e78c32bb2fe0158bfb017e#commitcomment-60577502">aquí</a>)</li>
 </ul>
 </div>
     <div id="labinstrumentos-0009011" class="section level1">
