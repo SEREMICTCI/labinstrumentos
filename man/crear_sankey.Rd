@@ -7,10 +7,10 @@
 crear_sankey(
   datos,
   n_words = 1,
-  top = Inf,
   freq_minima = 3,
   vars = c("clean_problema", "clean_causa", "clean_consecuencia"),
-  height = 1000
+  height = 1000,
+  output = "grafico"
 )
 }
 \arguments{
@@ -18,13 +18,14 @@ crear_sankey(
 
 \item{n_words}{Número de palabras combinadas. Por defecto es 1.}
 
-\item{top}{Del total de palabras, escoger las primeras \code{top} de mayor a menor. Por defecto es Inf.}
-
 \item{freq_minima}{Frecuencia mínima de palabras para filtrar. Por defecto es 3.}
 
 \item{vars}{Variables para visualizar. Por defecto son las variables \code{clean_problema}, \code{clean_causa} y \code{clean_consecuencia}.}
 
 \item{height}{Altura en píxeles del gråfico.}
+
+\item{output}{Carácter de longitud uno. Tipo de objeto resultante. Las opciones
+son \code{"grafico"} (por defecto), \code{"df_largo"}, \code{"df_corto"}.}
 }
 \description{
 \ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}

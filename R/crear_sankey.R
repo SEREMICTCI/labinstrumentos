@@ -9,10 +9,11 @@
 #'
 #' @param datos Datos usados para la generación del gráfico.
 #' @param n_words Número de palabras combinadas. Por defecto es 1.
-#' @param top Del total de palabras, escoger las primeras `top` de mayor a menor. Por defecto es Inf.
 #' @param freq_minima Frecuencia mínima de palabras para filtrar. Por defecto es 3.
 #' @param vars Variables para visualizar. Por defecto son las variables `clean_problema`, `clean_causa` y `clean_consecuencia`.
 #' @param height Altura en píxeles del gråfico.
+#' @param output Carácter de longitud uno. Tipo de objeto resultante. Las opciones
+#' son `"grafico"` (por defecto), `"df_largo"`, `"df_corto"`.
 #'
 #' @importFrom data.table melt.data.table data.table .SD := %like%
 #' @importFrom highcharter highchart hc_theme_google hc_chart hc_add_series data_to_sankey
@@ -21,49 +22,45 @@
 
 crear_sankey <- function(datos,
                          n_words = 1,
-                         top = Inf,
                          freq_minima = 3,
                          vars = c("clean_problema", "clean_causa", "clean_consecuencia"),
-                         height = 1000) {
+                         height = 1000,
+                         output = "grafico") {
 
   if (missing(datos)) stop("`datos` DEBE estar presente", call. = FALSE)
   if (n_words < 0) stop("`n_words` DEBE ser mayor que cero", call. = FALSE)
-  if (top < 0) stop("`top` DEBE ser mayor que cero", call. = FALSE)
   if (freq_minima < 0) stop("`freq_minima` DEBE ser mayor que cero", call. = FALSE)
   if (any(!vars %in% names(datos))) stop("`vars` DEBEN ser nombres de variables presentes en los datos", call. = FALSE)
+  if (!output %in% c("df_corto", "df_largo", "grafico")) stop("`output` DEBE ser uno de los siguientes: \"df_corto\", \"df_largo\", o \"grafico\"", call. = FALSE)
 
-  ## Definimos variables globales
   value <- variable <- grupo <- FREQ <- WORD <- NULL
 
-  ## Transformamos los datos a formato largo
   long_data <- data.table::melt.data.table(
     data = datos,
     measure.vars = vars
   )
 
-  ## Si los nombres contienen los prefijos 'clean_' los removemos
   if (any(levels(long_data$variable) %like% "clean")) {
     long_data[, variable := as.factor(x = gsub(pattern = "clean_", replacement = "", x = variable))]
   }
 
-  ## Evaluamos los términos frecuentes de cada grupo y de cada variable (i.e., problema, causa y consecuencia)
-  sankey_data <- long_data[j = obtener_terminos(value, n_words), keyby = list(variable, grupo)]
+  sankey_data <- long_data[, obtener_terminos(value, n_words), list(variable, grupo)]
 
-  ## Filtramos por la frecuencia mínima de palabras
-  sankey_data <- sankey_data[i = FREQ >= freq_minima,
-                             j = lapply(.SD, rep, FREQ),
-                             .SDcols = -4L]
+  filtered_words <- sankey_data[, list(FREQ = sum(FREQ)), WORD][FREQ >= freq_minima, WORD]
 
-  ## Creamos un lienzo (i.e., donde haremos el sankey)
+  sankey_data <- sankey_data[WORD %in% filtered_words]
+
+  if (isTRUE(output == "df_corto")) { return(sankey_data) }
+
+  sankey_data <- sankey_data[, lapply(.SD, rep, FREQ), .SDcols = -4L]
+
+  if (isTRUE(output == "df_largo")) { return(sankey_data) }
+
   p <- highcharter::highchart(
     height = height,
     theme = highcharter::hc_theme_google()
   )
-
-  ## Definimos el tipo de gráfico que haremos
   p <- highcharter::hc_chart(p, type = 'sankey')
-
-  ## Añadimos las series (los datos)
   p <- highcharter::hc_add_series(
     hc = p,
     data = highcharter::data_to_sankey(
@@ -71,7 +68,6 @@ crear_sankey <- function(datos,
     )
   )
 
-  ## Devolvemos el gráfico
   return(p)
 }
 
