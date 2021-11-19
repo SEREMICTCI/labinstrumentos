@@ -10,7 +10,7 @@
     <loc>https://seremictci.github.io/labinstrumentos/reference/crear_sankey.html</loc>
   </url>
   <url>
-    <loc>https://seremictci.github.io/labinstrumentos/reference/get_terms.html</loc>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/fun_tokenizer.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/grafico_red_circular.html</loc>
@@ -23,6 +23,9 @@
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/obtener_datos.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/obtener_terminos.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/red_comunidades_greedy.html</loc>
