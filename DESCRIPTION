@@ -24,7 +24,7 @@ Imports:
     data.table (>= 1.14.2),
     grDevices,
     lifecycle,
-    RWeka (>= 0.4.44),
     highcharter (>= 0.8.2),
     gsheet (>= 0.4.5),
-    stringi (>= 1.7.5)
+    stringi (>= 1.7.5),
+    NLP (>= 0.2.1)
