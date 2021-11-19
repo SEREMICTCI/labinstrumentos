@@ -27,7 +27,7 @@ crear_sankey <- function(datos,
                          height = 1000) {
 
   if (missing(datos)) stop("`datos` DEBE estar presente", call. = FALSE)
-  if (n_words < 0) stop("`top` DEBE ser mayor que cero", call. = FALSE)
+  if (n_words < 0) stop("`n_words` DEBE ser mayor que cero", call. = FALSE)
   if (top < 0) stop("`top` DEBE ser mayor que cero", call. = FALSE)
   if (freq_minima < 0) stop("`freq_minima` DEBE ser mayor que cero", call. = FALSE)
   if (any(!vars %in% names(datos))) stop("`vars` DEBEN ser nombres de variables presentes en los datos", call. = FALSE)
@@ -47,7 +47,7 @@ crear_sankey <- function(datos,
   }
 
   ## Evaluamos los términos frecuentes de cada grupo y de cada variable (i.e., problema, causa y consecuencia)
-  sankey_data <- long_data[j = get_terms(value, n_words), keyby = list(variable, grupo)]
+  sankey_data <- long_data[j = obtener_terminos(value, n_words), keyby = list(variable, grupo)]
 
   ## Filtramos por la frecuencia mínima de palabras
   sankey_data <- sankey_data[i = FREQ >= freq_minima,
