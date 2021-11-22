@@ -29,7 +29,7 @@ library(labinstrumentos)
 lab_instrumentos <- obtener_datos()[region == 1]
 
 # Variables de interés
-vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
+vars <- c("clean_problema", "clean_causa", "clean_consecuencia", "clean_soluciones")
 
 # Eliminamos el término macrozona-austral por se muy influyente
 lab_instrumentos[j = (vars) := lapply(.SD, gsub, pattern = "macrozona-austral", replacement = ""), 
@@ -125,3 +125,32 @@ grafico_red_hubs(red = red_consecuencias)
 ```{r}
 red_comunidades_spinglass(red = red_consecuencias)
 ```
+
+# Soluciones
+
+```{r}
+red_soluciones <- crear_redes_de_palabras(
+  x = lab_instrumentos$clean_soluciones
+)
+```
+
+## Gráfico de redes circular
+
+```{r}
+grafico_red_circular(red = red_soluciones, vertex.cex = 1L)
+```
+
+## Score de Hubs
+
+```{r}
+grafico_red_hubs(red = red_soluciones)
+```
+
+## Detección de comunidades
+
+### Algorítmo Spinglass
+
+```{r}
+red_comunidades_spinglass(red = red_soluciones)
+```
+
