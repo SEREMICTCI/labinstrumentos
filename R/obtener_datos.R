@@ -28,7 +28,9 @@ obtener_datos <- function() {
   names(lab_instrumentos) <- c("laboratorio", "grupo", "problema", "cluster_problema_manual",
                                "clean_problema", "cluster_causa_manual", "causa",
                                "clean_causa", "consecuencia", "clean_consecuencia",
-                               "region")
+                               "clean_soluciones", "region")
+
+
 
   ## Creamos un objeto intermedio para asistirnos en el proceso de limpieza
   col_names <- names(lab_instrumentos)
@@ -51,7 +53,7 @@ obtener_datos <- function() {
 
 
   ## Se seleccionan variables para procesamiento adicional
-  vars <- c("clean_problema", "clean_causa", "clean_consecuencia")
+  vars <- c("clean_problema", "clean_causa", "clean_consecuencia", "clean_soluciones")
 
   ## Con esas variables, se eliminan las 'stopWords', sin incluir aquellas que esten precedidas o antecedidas por un guión, i.e. palabra compuesta (e.g., 'no-consideran')
   lab_instrumentos[, (vars) := lapply(.SD, stringi::stri_replace_all_regex, pattern = stopWords, replacement = "", vectorize_all = FALSE), .SDcols = vars]
