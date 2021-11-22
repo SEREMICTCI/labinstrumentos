@@ -146,7 +146,7 @@
 <span class="va">lab_instrumentos</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/obtener_datos.html">obtener_datos</a></span><span class="op">(</span><span class="op">)</span><span class="op">[</span><span class="va">region</span> <span class="op">==</span> <span class="fl">1</span><span class="op">]</span>
 
 <span class="co"># Variables de interés</span>
-<span class="va">vars</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"clean_problema"</span>, <span class="st">"clean_causa"</span>, <span class="st">"clean_consecuencia"</span><span class="op">)</span>
+<span class="va">vars</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"clean_problema"</span>, <span class="st">"clean_causa"</span>, <span class="st">"clean_consecuencia"</span>, <span class="st">"clean_soluciones"</span><span class="op">)</span>
 
 <span class="co"># Eliminamos el término macrozona-austral por se muy influyente</span>
 <span class="va">lab_instrumentos</span><span class="op">[</span>j <span class="op">=</span> <span class="op">(</span><span class="va">vars</span><span class="op">)</span> <span class="op">:=</span> <span class="fu"><a href="https://rdrr.io/r/base/lapply.html">lapply</a></span><span class="op">(</span><span class="va">.SD</span>, <span class="va">gsub</span>, pattern <span class="op">=</span> <span class="st">"macrozona-austral"</span>, replacement <span class="op">=</span> <span class="st">""</span><span class="op">)</span>, 
@@ -247,6 +247,39 @@
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_spinglass.html">red_comunidades_spinglass</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_consecuencias</span><span class="op">)</span></code></pre></div>
 <p><img src="network_files/figure-html/unnamed-chunk-14-1.png" width="100%"></p>
+</div>
+</div>
+</div>
+<div id="soluciones" class="section level1">
+<h1 class="hasAnchor">
+<a href="#soluciones" class="anchor"></a>Soluciones</h1>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">red_soluciones</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/crear_redes_de_palabras.html">crear_redes_de_palabras</a></span><span class="op">(</span>
+  x <span class="op">=</span> <span class="va">lab_instrumentos</span><span class="op">$</span><span class="va">clean_soluciones</span>
+<span class="op">)</span></code></pre></div>
+<div id="gráfico-de-redes-circular-3" class="section level2">
+<h2 class="hasAnchor">
+<a href="#gr%C3%A1fico-de-redes-circular-3" class="anchor"></a>Gráfico de redes circular</h2>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../../reference/grafico_red_circular.html">grafico_red_circular</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_soluciones</span>, vertex.cex <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></code></pre></div>
+<p><img src="network_files/figure-html/unnamed-chunk-16-1.png" width="100%"></p>
+</div>
+<div id="score-de-hubs-3" class="section level2">
+<h2 class="hasAnchor">
+<a href="#score-de-hubs-3" class="anchor"></a>Score de Hubs</h2>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../../reference/grafico_red_hubs.html">grafico_red_hubs</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_soluciones</span><span class="op">)</span></code></pre></div>
+<p><img src="network_files/figure-html/unnamed-chunk-17-1.png" width="100%"></p>
+</div>
+<div id="detección-de-comunidades-3" class="section level2">
+<h2 class="hasAnchor">
+<a href="#detecci%C3%B3n-de-comunidades-3" class="anchor"></a>Detección de comunidades</h2>
+<div id="algorítmo-spinglass-3" class="section level3">
+<h3 class="hasAnchor">
+<a href="#algor%C3%ADtmo-spinglass-3" class="anchor"></a>Algorítmo Spinglass</h3>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../../reference/red_comunidades_spinglass.html">red_comunidades_spinglass</a></span><span class="op">(</span>red <span class="op">=</span> <span class="va">red_soluciones</span><span class="op">)</span></code></pre></div>
+<p><img src="network_files/figure-html/unnamed-chunk-18-1.png" width="100%"></p>
 </div>
 </div>
 </div>
