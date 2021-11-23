@@ -142,7 +142,7 @@ grafico_red_hubs(red = red_soluciones)
 
 ## Detección de comunidades
 
-### Algorítmo Spinglass
+### Algorítmo Fast-Greedy
 
 ```{r}
 red_comunidades_greedy(red = red_soluciones)
