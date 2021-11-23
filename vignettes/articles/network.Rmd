@@ -145,6 +145,6 @@ grafico_red_hubs(red = red_soluciones)
 ### Algorítmo Spinglass
 
 ```{r}
-red_comunidades_spinglass(red = red_soluciones)
+red_comunidades_greedy(red = red_soluciones)
 ```
 
