@@ -17,14 +17,14 @@ obtener_terminos <- function(i, n_words = 1) {
 
   i <- unique(i)
 
-  m <- tm::VectorSource(x = i)
-  m <- tm::VCorpus(x = m)
-  m <- tm::DocumentTermMatrix(x = m, control = list(tokenize = fun))
+  m <- VectorSource(x = i)
+  m <- VCorpus(x = m)
+  m <- DocumentTermMatrix(x = m, control = list(tokenize = fun))
   m <- as.matrix(m)
   m <- colSums(x = m)
   m <- sort(x = m, decreasing = TRUE)
 
-  terms <- data.table::data.table(WORD = names(m), FREQ = m)
+  terms <- data.table(WORD = names(m), FREQ = m)
 
   return(terms)
 }

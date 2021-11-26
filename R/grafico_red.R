@@ -46,9 +46,9 @@ grafico_red_hubs <- function(red) {
 
   if (!"igraph" %in% class(red)) stop("`red` DEBE ser un objeto de clase `igraph`")
 
-  hs <- igraph::hub_score(red, weights = NA)$vector
+  hs <- hub_score(red, weights = NA)$vector
 
-  graphics::plot(red,
+  plot(red,
        vertex.size = hs * 20L,
-       vertex.color = grDevices::rainbow(50))
+       vertex.color = rainbow(50))
 }

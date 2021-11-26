@@ -69,18 +69,20 @@ red_comunidades_greedy <- function(red, seed = 12345, output = "plot") {
   if (!"igraph" %in% class(red)) stop("`red` DEBE ser un objeto de clase `igraph`")
 
   set.seed(seed) # Semilla de reproducibilidad
-  greedy <- igraph::cluster_fast_greedy(
-    graph = igraph::as.undirected(red)
+
+  greedy <- cluster_fast_greedy(
+    graph = as.undirected(red)
   )
 
   if (output == "plot") {
 
-    graphics::plot(greedy, red, vertex.size = 8)
+    plot(greedy, red, vertex.size = 8)
 
   } else if (output == "groups") {
 
-    groups <- igraph::membership(greedy)
-    groups <- data.table::data.table(groups, words = names(groups), key = "groups")
+    groups <- membership(greedy)
+    groups <- data.table(groups, words = names(groups), key = "groups")
+
     return(groups)
 
   } else if (output == "raw") {
