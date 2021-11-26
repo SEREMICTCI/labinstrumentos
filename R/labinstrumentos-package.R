@@ -8,6 +8,7 @@
 "_PACKAGE"
 
 ## usethis namespace: start
+#' @importFrom data.table data.table .SD := %like%
 #' @importFrom lifecycle deprecated
 ## usethis namespace: end
 NULL

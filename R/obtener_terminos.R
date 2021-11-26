@@ -6,9 +6,6 @@
 #' @param i vector de carácteres.
 #' @param n_words Número de palabras combinadas.
 #'
-#' @importFrom tm VCorpus VectorSource DocumentTermMatrix
-#' @importFrom data.table data.table
-#'
 #' @export
 
 obtener_terminos <- function(i, n_words = 1) {
@@ -17,9 +14,9 @@ obtener_terminos <- function(i, n_words = 1) {
 
   i <- unique(i)
 
-  m <- VectorSource(x = i)
-  m <- VCorpus(x = m)
-  m <- DocumentTermMatrix(x = m, control = list(tokenize = fun))
+  m <- tm::VectorSource(x = i)
+  m <- tm::VCorpus(x = m)
+  m <- tm::DocumentTermMatrix(x = m, control = list(tokenize = fun))
   m <- as.matrix(m)
   m <- colSums(x = m)
   m <- sort(x = m, decreasing = TRUE)

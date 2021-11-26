@@ -15,9 +15,6 @@
 #' @param output Carácter de longitud uno. Tipo de objeto resultante. Las opciones
 #' son `"grafico"` (por defecto), `"df_largo"`, `"df_corto"`.
 #'
-#' @importFrom data.table melt data.table .SD := %like%
-#' @importFrom highcharter highchart hc_theme_google hc_chart hc_add_series data_to_sankey
-#'
 #' @export
 
 crear_sankey <- function(datos,
@@ -35,7 +32,7 @@ crear_sankey <- function(datos,
 
   value <- variable <- grupo <- FREQ <- WORD <- NULL
 
-  long_data <- melt(
+  long_data <- data.table::melt(
     data = datos,
     measure.vars = vars
   )
@@ -56,14 +53,14 @@ crear_sankey <- function(datos,
 
   if (isTRUE(output == "df_largo")) { return(sankey_data) }
 
-  p <- highchart(
+  p <- highcharter::highchart(
     height = height,
-    theme = hc_theme_google()
+    theme = highcharter::hc_theme_google()
   )
-  p <- hc_chart(p, type = 'sankey')
-  p <- hc_add_series(
+  p <- highcharter::hc_chart(p, type = 'sankey')
+  p <- highcharter::hc_add_series(
     hc = p,
-    data = data_to_sankey(
+    data = highcharter::data_to_sankey(
       data = sankey_data[, list(grupo, WORD, variable)]
     )
   )

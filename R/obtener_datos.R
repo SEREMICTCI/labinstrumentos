@@ -5,10 +5,6 @@
 #'
 #' Llamar a los datos alojados en el Google sheets con los datos crudos
 #'
-#' @importFrom gsheet gsheet2tbl
-#' @importFrom data.table as.data.table
-#' @importFrom stringi stri_replace_all_regex
-#'
 #' @export
 
 obtener_datos <- function() {
@@ -17,12 +13,12 @@ obtener_datos <- function() {
 
   url <- "https://docs.google.com/spreadsheets/d/1ct6zRIDli4AHjk8QsF4CYSwZzzTVGK0ncCDBXtXhmqY/edit#gid=34243368"
 
-  lab_instrumentos <- gsheet2tbl(url)
+  lab_instrumentos <- gsheet::gsheet2tbl(url)
 
   message("Datos descargados, comenzando proceso de limpieza")
 
   ## Transformamos a data.table para mejor manipulación (i.e., sintaxis más concisa)
-  lab_instrumentos <- as.data.table(lab_instrumentos)
+  lab_instrumentos <- data.table::as.data.table(lab_instrumentos)
 
   ## Cambiamos nombres de columnas a minúsculas (mayor compatibilidad multi-plataforma)
   names(lab_instrumentos) <- c("laboratorio", "grupo", "problema", "cluster_problema_manual",
@@ -56,7 +52,7 @@ obtener_datos <- function() {
   vars <- c("clean_problema", "clean_causa", "clean_consecuencia", "clean_soluciones")
 
   ## Con esas variables, se eliminan las 'stopWords', sin incluir aquellas que esten precedidas o antecedidas por un guión, i.e. palabra compuesta (e.g., 'no-consideran')
-  lab_instrumentos[, (vars) := lapply(.SD, stri_replace_all_regex, pattern = stopWords, replacement = "", vectorize_all = FALSE), .SDcols = vars]
+  lab_instrumentos[, (vars) := lapply(.SD, stringi::stri_replace_all_regex, pattern = stopWords, replacement = "", vectorize_all = FALSE), .SDcols = vars]
 
 
   # Procedimientos complementarios y/o menores --------------------------------------------------

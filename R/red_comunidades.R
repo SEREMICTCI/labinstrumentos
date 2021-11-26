@@ -33,7 +33,7 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
   } else if (output == "groups") {
 
     groups <- igraph::membership(spinglass)
-    groups <- data.table::data.table(groups, words = names(groups), key = "groups")
+    groups <- data.table(groups, words = names(groups), key = "groups")
     return(groups)
 
   } else if (output == "raw") {
@@ -59,9 +59,6 @@ red_comunidades_spinglass <- function(red, seed = 12345, output = "plot") {
 #' @param output Resultado final. Puede ser 'plot' (devuelve un gráfico de análisis de comunidades),
 #' 'groups' (un vector con los grupos) o 'raw' (el objeto sin procesar de clase 'communities').
 #'
-#' @importFrom igraph cluster_fast_greedy as.undirected membership
-#' @importFrom data.table data.table
-#' @importFrom graphics plot
 #' @export
 
 red_comunidades_greedy <- function(red, seed = 12345, output = "plot") {
@@ -70,17 +67,17 @@ red_comunidades_greedy <- function(red, seed = 12345, output = "plot") {
 
   set.seed(seed) # Semilla de reproducibilidad
 
-  greedy <- cluster_fast_greedy(
-    graph = as.undirected(red)
+  greedy <- igraph::cluster_fast_greedy(
+    graph = igraph::as.undirected(red)
   )
 
   if (output == "plot") {
 
-    plot(greedy, red, vertex.size = 8)
+    graphics::plot(greedy, red, vertex.size = 8)
 
   } else if (output == "groups") {
 
-    groups <- membership(greedy)
+    groups <- igraph::membership(greedy)
     groups <- data.table(groups, words = names(groups), key = "groups")
 
     return(groups)

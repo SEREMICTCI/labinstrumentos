@@ -9,8 +9,6 @@
 #'
 #' @param x Un vector de carácteres.
 #'
-#' @importFrom tm Corpus VectorSource TermDocumentMatrix
-#' @importFrom igraph graph.adjacency simplify V V<- degree
 #' @export
 
 crear_redes_de_palabras <- function(x) {
@@ -21,9 +19,9 @@ crear_redes_de_palabras <- function(x) {
   x <- x[!is.na(x)]
 
   ## Creación de un corpus para posterior análisis
-  m <- Corpus(x = VectorSource(x = unique(x)))
+  m <- tm::Corpus(x = tm::VectorSource(x = unique(x)))
 
-  m <- TermDocumentMatrix(x = m, control = list(minWordLength = c(1L, Inf)))
+  m <- tm::TermDocumentMatrix(x = m, control = list(minWordLength = c(1L, Inf)))
 
   m <- as.matrix(m)
 
@@ -37,15 +35,15 @@ crear_redes_de_palabras <- function(x) {
   m3 <- m2 %*% t(m2)
 
   ## Creamos los nodos con sus respectivos vertices
-  g <- graph.adjacency(m3, weighted = TRUE, mode = 'undirected')
+  g <- igraph::graph.adjacency(m3, weighted = TRUE, mode = 'undirected')
 
-  g <- simplify(g)
+  g <- igraph::simplify(g)
 
   ## Le asignamos etiquetas a los nodos para mejor visualización
-  V(g)$label <- V(g)$name
+  igraph::V(g)$label <- igraph::V(g)$name
 
   ## Le asignamos la propiedad degree (número de vertices adjacentes) al grafo
-  V(g)$degree <- degree(g)
+  igraph::V(g)$degree <- igraph::degree(g)
 
   return(g)
 }
