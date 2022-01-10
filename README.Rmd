@@ -52,8 +52,6 @@ Para llevar a cabo el objetivo de este trabajo, se llevó a cabo el siguiente pl
 
 La secuencia didáctica de los Laboratorios se basa en la producción creativa individual y colectiva, un fenómeno complejo influenciado por múltiples variables y distintos niveles, que a su vez depende de variables contextuales y medioambientales. La mayoría de los autores están de acuerdo en que los procesos centrales necesarios para la resolución creativa de problemas son (1) la identificación y construcción de problemas, (2) la identificación de información relevante, (3) la generación de nuevas ideas y la (4) evaluación de estas ideas (Basadur & Gelade, 2003; Montag-Smit & Maertz, 2017; Mumford, 2001; Pressman, 2019; Reiter-Palmon & Illies, 2004). Los primeros tres procesos normalmente se consideran parte de la fase de generación de ideas, mientras que el último se considera parte de la fase de implementación (Mumford, 2001). A partir de lo anterior, se definen 3 etapas dentro de la metodología del taller: Problemática, Elaboración y Evaluación.
 
-**Tabla 3**
-
 | Problemática                                                             | Elaboración                                                           | Comunicación                                                      |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------|
 | 1.     Entregar análisis sistema CTCI regional y roles de participantes. | 1.      Identificar y seleccionar información que respalde problemas. | 1.      Preparar   recomendaciones                                |

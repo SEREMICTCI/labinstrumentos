@@ -70,8 +70,6 @@ fase de implementación (Mumford, 2001). A partir de lo anterior, se
 definen 3 etapas dentro de la metodología del taller: Problemática,
 Elaboración y Evaluación.
 
-**Tabla 3**
-
 | Problemática                                                          | Elaboración                                                       | Comunicación                                               |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|
 | 1\. Entregar análisis sistema CTCI regional y roles de participantes. | 1\. Identificar y seleccionar información que respalde problemas. | 1\. Preparar recomendaciones                               |
