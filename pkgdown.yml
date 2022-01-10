@@ -1,13 +1,13 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1
+pkgdown: 2.0.1
 pkgdown_sha: ~
 articles:
-  articles/Data: Data.html
-  articles/eda: eda.html
-  articles/network: network.html
-  articles/network_sin_anid: network_sin_anid.html
-  articles/sankey: sankey.html
-last_built: 2021-11-26T03:37Z
+  Data: Data.html
+  eda: eda.html
+  network: network.html
+  network_sin_anid: network_sin_anid.html
+  sankey: sankey.html
+last_built: 2022-01-10T23:27Z
 urls:
   reference: https://seremictci.github.io/labinstrumentos/reference
   article: https://seremictci.github.io/labinstrumentos/articles

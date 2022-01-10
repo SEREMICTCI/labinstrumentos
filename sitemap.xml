@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://seremictci.github.io/labinstrumentos/404.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/Data.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/eda.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/network.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/network_sin_anid.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/articles/sankey.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/authors.html</loc>
+  </url>
+  <url>
     <loc>https://seremictci.github.io/labinstrumentos/index.html</loc>
+  </url>
+  <url>
+    <loc>https://seremictci.github.io/labinstrumentos/news/index.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html</loc>
@@ -19,33 +49,21 @@
     <loc>https://seremictci.github.io/labinstrumentos/reference/grafico_red_hubs.html</loc>
   </url>
   <url>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/index.html</loc>
+  </url>
+  <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/labinstrumentos-package.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/obtener_datos.html</loc>
   </url>
   <url>
-    <loc>https://seremictci.github.io/labinstrumentos/reference/obtener_terminos.html</loc>
+    <loc>https://seremictci.github.io/labinstrumentos/reference/obtener_frecuencias.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/red_comunidades_greedy.html</loc>
   </url>
   <url>
     <loc>https://seremictci.github.io/labinstrumentos/reference/red_comunidades_spinglass.html</loc>
-  </url>
-  <url>
-    <loc>https://seremictci.github.io/labinstrumentos/articles/articles/Data.html</loc>
-  </url>
-  <url>
-    <loc>https://seremictci.github.io/labinstrumentos/articles/articles/eda.html</loc>
-  </url>
-  <url>
-    <loc>https://seremictci.github.io/labinstrumentos/articles/articles/network.html</loc>
-  </url>
-  <url>
-    <loc>https://seremictci.github.io/labinstrumentos/articles/articles/network_sin_anid.html</loc>
-  </url>
-  <url>
-    <loc>https://seremictci.github.io/labinstrumentos/articles/articles/sankey.html</loc>
   </url>
 </urlset>
