@@ -62,21 +62,30 @@ articles:
   - articles/sankey
 
 reference:
+- title: Datos
+  contents:
+  - obtener_datos
+
 - title: Análisis de redes
+- subtitle: Frecuencia de palabras
+  contents:
+  - obtener_frecuencias
+
 - subtitle: Diagramas de Sankey
   contents:
   - crear_sankey
+
 - subtitle: Creación de redes
   contents:
   - crear_redes_de_palabras
+
 - subtitle: Visualización de redes
   contents:
   - grafico_red_circular
   - grafico_red_hubs
+
 - subtitle: Análisis de comunidades
   contents:
   - red_comunidades_greedy
   - red_comunidades_spinglass
-- title: Datos
-  contents:
-  - obtener_datos
+

@@ -16,3 +16,30 @@ Utilizando la librería \code{tm} y \code{igraph}, opta por un 'wrapper' para ge
 redes listas para ser utilizadas bajo el contexto de procesamiento de lenguaje
 natural.
 }
+\section{Metodología usada}{
+
+
+Primero se creó una matriz de términos (i.e, corpus), usando las palabras únicas
+usando el paquete \code{tm}.\if{html}{\out{<div class="sourceCode r">}}\preformatted{m <- tm::Corpus(x = tm::VectorSource(x = unique(x)))
+
+m <- tm::TermDocumentMatrix(x = m, control = list(minWordLength = c(1L, Inf)))
+}\if{html}{\out{</div>}}
+
+Se obtuvieron aquellos términos que tuvieran al menos dos términos que aparecieran de
+manera única, asignando el valor de 1 para decir si estos se encontraban presentes o no).\if{html}{\out{<div class="sourceCode r">}}\preformatted{m2 <- m[rowSums(m) > 1, ]
+
+m2[m2 > 1] <- 1
+}\if{html}{\out{</div>}}
+
+Se calculó la co-ocurrencia de los términos calculando la multiplicación de la matriz de
+valores por su versión transpuesta, para así obtener nuestra matriz de adjacencia.\if{html}{\out{<div class="sourceCode r">}}\preformatted{m3 <- m2 \%*\% t(m2)
+}\if{html}{\out{</div>}}
+
+Posteriormente se crearon los nodos con sus respectivos vertices sobre nuestra matriz de
+adjacencia usando el paquete \code{igraph}, devolviendo el objeto para ser usado en técnicas
+de visualización o análisis de comunidades.\if{html}{\out{<div class="sourceCode r">}}\preformatted{g <- igraph::graph.adjacency(m3, weighted = TRUE, mode = 'undirected')
+
+g <- igraph::simplify(g)
+}\if{html}{\out{</div>}}
+}
+

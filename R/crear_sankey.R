@@ -41,7 +41,7 @@ crear_sankey <- function(datos,
     long_data[, variable := as.factor(x = gsub(pattern = "clean_", replacement = "", x = variable))]
   }
 
-  sankey_data <- long_data[, obtener_terminos(value, n_words), list(variable, grupo)]
+  sankey_data <- long_data[, obtener_frecuencias(value, n_words), list(variable, grupo)]
 
   filtered_words <- sankey_data[, list(FREQ = sum(FREQ)), WORD][FREQ >= freq_minima, WORD]
 

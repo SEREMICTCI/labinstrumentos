@@ -12,5 +12,5 @@ fun_tokenizer(j, n_words)
 \item{n_words}{Número de palabras conjuntas.}
 }
 \description{
-Esta función es usada de manera interna por \code{obtener_terminos()}
+Esta función es usada de manera interna por \code{obtener_frecuencias()}
 }

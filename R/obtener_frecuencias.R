@@ -8,7 +8,7 @@
 #'
 #' @export
 
-obtener_terminos <- function(i, n_words = 1) {
+obtener_frecuencias <- function(i, n_words = 1) {
 
   fun <- function(j) { fun_tokenizer(j, n_words) }
 

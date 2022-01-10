@@ -1,6 +1,6 @@
 #' Función interna tokenizadora para la extracción de palabras
 #'
-#' Esta función es usada de manera interna por `obtener_terminos()`
+#' Esta función es usada de manera interna por `obtener_frecuencias()`
 #'
 #' @param j Vector de carácteres.
 #' @param n_words Número de palabras conjuntas.
