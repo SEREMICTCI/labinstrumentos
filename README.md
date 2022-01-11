@@ -22,9 +22,9 @@ El taller “Laboratorios de Instrumentos” tiene por objetivo generar una
 propuesta de recomendaciones a programas/instrumentos ANID teniendo en
 cuenta las brechas regionales y el sistema CTCI local. El análisis
 actual se focalizó en los los instrumentos más utilizados en la
-Macrozona Austral y seleccionando aquellos investigadores principales
-con proyectos vigentes con año de finalización desde 2020 en adelante.
-Se obtuvieron un total de 4 programas con 6 instrumentos en total.
+Macrozona Austral, seleccionando solamente aquellos investigadores principales
+con proyectos vigentes cuyo año de finalización sea desde el 2020 en adelante.
+A partir de los criterios anteriores, se obtuvieron un total de 4 programas con 6 instrumentos en total.
 
 | Programa                                                        | Instrumento                                |
 |-----------------------------------------------------------------|--------------------------------------------|
@@ -35,15 +35,15 @@ Se obtuvieron un total de 4 programas con 6 instrumentos en total.
 | Fondo Nacional de Desarrollo Científico y Tecnológico, Fondecyt | Postdoctorado                              |
 | Fondo de Fomento al Desarrollo Científico y Tecnológico, Fondef | IDEA                                       |
 
-Por último se seleccionaron a los investigadores que pertenecen a las
+De la búsqueda anterior, se seleccionaron a los investigadores que pertenecen a las
 instituciones que tienen comprobada residencia en la región de Aysén y
 Magallanes, pero se realizaron invitaciones especiales con el criterio
 de mejorar el desarrollo del taller e incluir miradas particulares que
-se consideraron necesarias, debido a esto en el programa FONDEQUIP se
+se consideraron necesarias. Debido a esto en el programa FONDEQUIP se
 sumaron investigadores de fuera de la macrozona pero con proyectos cuya
 región de ejecución es Aysén o Magallanes.
 
-Para llevar a cabo el objetivo de este trabajo, se llevó a cabo el
+Para llevar a cabo el objetivo de este trabajo, se implementó el
 siguiente plan de acción:
 
 | Etapa                     | 1\. Preparación de indicadores                                                                                          | 2\. Análisis y generación de propuestas                                                                                                                                                    | 3\. Desarrollo técnico de propuestas                                                                                                           |
@@ -91,7 +91,7 @@ utilizando el problema como elemento pivot.
 
 ### 3.1. Limpieza manual
 
-Para cada columna se realizó una limpieza manual que consistió en X
+Para cada columna se realizó una limpieza manual que consistió en 3
 pasos:
 
 1.  Se cambiaron palabras compuestas por palabras únicas, por ejemplo:
@@ -103,13 +103,11 @@ pasos:
     por ejemplo: rígido-faltadeflexibilidad-inmovilidad: inflexible,
     MZ-regiones: Macrozona, presupuesto-recursos-financiar-monto:
     financiamiento, etc.
-
-Se unificaron con guiones las palabras compuestas, por ejemplo:
-Capital-humano, costo-operacional, Macrozona-Austral, etc.
+3. Las palabras compuestas se unificaron con guiones, por ejemplo: Capital-humano, costo-operacional, Macrozona-Austral, etc.
 
 ### 3.2. Limpieza programática
 
-Descargamos los datos alojados en un Google Sheets, con las últimas
+Descargamos los datos alojados en Google Sheets, con las últimas
 modificaciones del procesamiento manual de los datos.
 
 Seguido a esto se asignó nombres sintácticamente válidos a las columnas
@@ -122,7 +120,7 @@ consecuencias y soluciones, en donde se eliminaron las “stop-words”
 antecedidas por un guión, i.e. palabra compuesta (e.g.,
 ‘no-consideran’).
 
-## 4. Análsis de frecuencia de palabras
+## 4. Análisis de frecuencia de palabras
 
 Se obtuvieron frecuencias de palabras mediante la selección de palabras
 que se repitieran. Este proceso se replicó con grupos de dos y tres
