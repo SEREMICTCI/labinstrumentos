@@ -22,9 +22,10 @@ El taller “Laboratorios de Instrumentos” tiene por objetivo generar una
 propuesta de recomendaciones a programas/instrumentos ANID teniendo en
 cuenta las brechas regionales y el sistema CTCI local. El análisis
 actual se focalizó en los los instrumentos más utilizados en la
-Macrozona Austral, seleccionando solamente aquellos investigadores principales
-con proyectos vigentes cuyo año de finalización sea desde el 2020 en adelante.
-A partir de los criterios anteriores, se obtuvieron un total de 4 programas con 6 instrumentos en total.
+Macrozona Austral, seleccionando solamente aquellos investigadores
+principales con proyectos vigentes cuyo año de finalización sea desde el
+2020 en adelante. A partir de los criterios anteriores, se obtuvieron un
+total de 4 programas con 6 instrumentos en total.
 
 | Programa                                                        | Instrumento                                |
 |-----------------------------------------------------------------|--------------------------------------------|
@@ -35,13 +36,13 @@ A partir de los criterios anteriores, se obtuvieron un total de 4 programas con 
 | Fondo Nacional de Desarrollo Científico y Tecnológico, Fondecyt | Postdoctorado                              |
 | Fondo de Fomento al Desarrollo Científico y Tecnológico, Fondef | IDEA                                       |
 
-De la búsqueda anterior, se seleccionaron a los investigadores que pertenecen a las
-instituciones que tienen comprobada residencia en la región de Aysén y
-Magallanes, pero se realizaron invitaciones especiales con el criterio
-de mejorar el desarrollo del taller e incluir miradas particulares que
-se consideraron necesarias. Debido a esto en el programa FONDEQUIP se
-sumaron investigadores de fuera de la macrozona pero con proyectos cuya
-región de ejecución es Aysén o Magallanes.
+De la búsqueda anterior, se seleccionaron a los investigadores que
+pertenecen a las instituciones que tienen comprobada residencia en la
+región de Aysén y Magallanes, pero se realizaron invitaciones especiales
+con el criterio de mejorar el desarrollo del taller e incluir miradas
+particulares que se consideraron necesarias. Debido a esto en el
+programa FONDEQUIP se sumaron investigadores de fuera de la macrozona
+pero con proyectos cuya región de ejecución es Aysén o Magallanes.
 
 Para llevar a cabo el objetivo de este trabajo, se implementó el
 siguiente plan de acción:
@@ -70,21 +71,20 @@ fase de implementación (Mumford, 2001). A partir de lo anterior, se
 definen 3 etapas dentro de la metodología del taller: Problemática,
 Elaboración y Evaluación.
 
-| Problemática                                                          | Elaboración                                                       | Comunicación                                               |
-|-----------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|
+| Problemática                                                              | Elaboración                                                       | Comunicación                                               |
+|---------------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|
 | 1\. Entregar análisis del sistema CTCI regional y roles de participantes. | 1\. Identificar y seleccionar información que respalde problemas. | 1\. Preparar recomendaciones                               |
-| 2\. Reconocer, enumerar y describir problemas del instrumento.        | 2\. Filtrar información y crear fichas de los problemas           | 2\. Comunicar las propuestas                               |
-| 3\. Agrupar los problemas detectados                                  | 3\. Priorizar los problemas                                       | 3\. Evaluar, discutir y recibir feedback de las propuestas |
-| 4\. Profundizar y definir raíz del problema.                          | 4\. Generar recomendaciones                                       |                                                            |
-| 5\. Identificar información para validar problemas.                   | 5\. Consolidar recomendaciones: priorización                      |                                                            |
-| \* Etapa desarrollada en grupos homogéneos                                                             | \* Etapa desarrollada en grupos homogéneos                                                         | \* Etapa desarrollada en plenario con público heterogéneo                                               |
+| 2\. Reconocer, enumerar y describir problemas del instrumento.            | 2\. Filtrar información y crear fichas de los problemas           | 2\. Comunicar las propuestas                               |
+| 3\. Agrupar los problemas detectados                                      | 3\. Priorizar los problemas                                       | 3\. Evaluar, discutir y recibir feedback de las propuestas |
+| 4\. Profundizar y definir raíz del problema.                              | 4\. Generar recomendaciones                                       |                                                            |
+| 5\. Identificar información para validar problemas.                       | 5\. Consolidar recomendaciones: priorización                      |                                                            |
+| \* Etapa desarrollada en grupos homogéneos                                | \* Etapa desarrollada en grupos homogéneos                        | \* Etapa desarrollada en plenario con público heterogéneo  |
 
 ## 3. Tratamiento de los datos
 
 Los talleres fueron desarrollados a partir de la metodología anterior,
 de la cual se obtuvo información de los problemas, causas,
 consecuencias, indicadores y soluciones para cada problema detectado.
-
 Esto fue compilado en formato largo y quedaron relacionados todos los
 problemas con sus causas, consecuencias, indicadores y soluciones,
 utilizando el problema como elemento pivot.
@@ -103,7 +103,9 @@ pasos:
     por ejemplo: rígido-faltadeflexibilidad-inmovilidad: inflexible,
     MZ-regiones: Macrozona, presupuesto-recursos-financiar-monto:
     financiamiento, etc.
-3. Las palabras compuestas se unificaron con guiones, por ejemplo: Capital-humano, costo-operacional, Macrozona-Austral, etc.
+
+3.  Las palabras compuestas se unificaron con guiones, por ejemplo:
+    Capital-humano, costo-operacional, Macrozona-Austral, etc.
 
 ### 3.2. Limpieza programática
 
