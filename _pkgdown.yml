@@ -89,6 +89,6 @@ reference:
   - red_comunidades_greedy
   - red_comunidades_spinglass
 
-- Title: Funciones internas
+- title: Funciones internas
   contents:
   - fun_tokenizer
