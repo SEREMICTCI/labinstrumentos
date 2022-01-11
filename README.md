@@ -72,12 +72,12 @@ Elaboración y Evaluación.
 
 | Problemática                                                          | Elaboración                                                       | Comunicación                                               |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|
-| 1\. Entregar análisis sistema CTCI regional y roles de participantes. | 1\. Identificar y seleccionar información que respalde problemas. | 1\. Preparar recomendaciones                               |
+| 1\. Entregar análisis del sistema CTCI regional y roles de participantes. | 1\. Identificar y seleccionar información que respalde problemas. | 1\. Preparar recomendaciones                               |
 | 2\. Reconocer, enumerar y describir problemas del instrumento.        | 2\. Filtrar información y crear fichas de los problemas           | 2\. Comunicar las propuestas                               |
 | 3\. Agrupar los problemas detectados                                  | 3\. Priorizar los problemas                                       | 3\. Evaluar, discutir y recibir feedback de las propuestas |
 | 4\. Profundizar y definir raíz del problema.                          | 4\. Generar recomendaciones                                       |                                                            |
 | 5\. Identificar información para validar problemas.                   | 5\. Consolidar recomendaciones: priorización                      |                                                            |
-| \* Grupos                                                             | \* Grupos                                                         | \* Plenario                                                |
+| \* Etapa desarrollada en grupos homogéneos                                                             | \* Etapa desarrollada en grupos homogéneos                                                         | \* Etapa desarrollada en plenario con público heterogéneo                                               |
 
 ## 3. Tratamiento de los datos
 
