@@ -124,17 +124,17 @@ antecedidas por un guión, i.e. palabra compuesta (e.g.,
 
 ## 4. Análisis de frecuencia de palabras
 
-Se obtuvieron frecuencias de palabras mediante la selección de palabras
+Para detectar los temas que más se repiten, se obtuvieron frecuencias de palabras mediante la selección de términos
 que se repitieran. Este proceso se replicó con grupos de dos y tres
-palabras para obtener el contexto en el cual se dieron los términos. Los
+palabras para obtener el contexto en el cual se dieron los términos y obtener temas más específicos. Los
 cuales pueden apreciarse en el segmento de [análisis
 exploratorio](https://seremictci.github.io/labinstrumentos/articles/articles/eda.html).
 
-## 5. Detección de comunidades
+## 5. Detección de posibles comunidades y relaciones entre temas
 
 Para el análisis de potenciales comunidades existentes en los datos se
-crearon las matrices de adjacencia de los términos. Para esto se
-implementó una función que lo calculó para cada dimensión, la cual puede
+crearon matrices de adjacencia de los términos. Para esto se
+implementó una función que lo calcula para cada dimensión, la cual puede
 consultarse en su respectiva
 [documentación](https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html).
 
