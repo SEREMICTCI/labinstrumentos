@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-## 1. Datos y análisis del laboratorio de instrumentos
+## Datos y análisis del laboratorio de instrumentos
 
 <!-- badges: start -->
 
@@ -16,7 +16,7 @@ Este es un paquete de <i class="fab fa-r-project"></i> que contiene los
 datos procesados del laboratorio de intrumentos, así como herramientas
 complementarias para su análisis y visualización.
 
-## 2. Origen de los datos
+## Origen de los datos
 
 El taller “Laboratorios de Instrumentos” tiene por objetivo generar una
 propuesta de recomendaciones a programas/instrumentos ANID teniendo en
@@ -80,7 +80,7 @@ Elaboración y Evaluación.
 | 5\. Identificar información para validar problemas.                       | 5\. Consolidar recomendaciones: priorización                      |                                                            |
 | \* Etapa desarrollada en grupos homogéneos                                | \* Etapa desarrollada en grupos homogéneos                        | \* Etapa desarrollada en plenario con público heterogéneo  |
 
-## 3. Tratamiento de los datos
+## Tratamiento de los datos
 
 Los talleres fueron desarrollados a partir de la metodología anterior,
 de la cual se obtuvo información de los problemas, causas,
@@ -89,7 +89,7 @@ Esto fue compilado en formato largo y quedaron relacionados todos los
 problemas con sus causas, consecuencias, indicadores y soluciones,
 utilizando el problema como elemento pivot.
 
-### 3.1. Limpieza manual
+### Limpieza manual
 
 Para cada columna se realizó una limpieza manual que consistió en 3
 pasos:
@@ -107,7 +107,7 @@ pasos:
 3.  Las palabras compuestas se unificaron con guiones, por ejemplo:
     Capital-humano, costo-operacional, Macrozona-Austral, etc.
 
-### 3.2. Limpieza programática
+### Limpieza programática
 
 Descargamos los datos alojados en Google Sheets, con las últimas
 modificaciones del procesamiento manual de los datos.
@@ -122,23 +122,23 @@ consecuencias y soluciones, en donde se eliminaron las “stop-words”
 antecedidas por un guión, i.e. palabra compuesta (e.g.,
 ‘no-consideran’).
 
-## 4. Análisis de frecuencia de palabras
+## Análisis de frecuencia de palabras
 
-Para detectar los temas que más se repiten, se obtuvieron frecuencias de palabras mediante la selección de términos
+Se obtuvieron frecuencias de palabras mediante la selección de palabras
 que se repitieran. Este proceso se replicó con grupos de dos y tres
-palabras para obtener el contexto en el cual se dieron los términos y obtener temas más específicos. Los
+palabras para obtener el contexto en el cual se dieron los términos. Los
 cuales pueden apreciarse en el segmento de [análisis
 exploratorio](https://seremictci.github.io/labinstrumentos/articles/articles/eda.html).
 
-## 5. Detección de posibles comunidades y relaciones entre temas
+## Detección de comunidades
 
 Para el análisis de potenciales comunidades existentes en los datos se
-crearon matrices de adjacencia de los términos. Para esto se
-implementó una función que lo calcula para cada dimensión, la cual puede
+crearon las matrices de adjacencia de los términos. Para esto se
+implementó una función que lo calculó para cada dimensión, la cual puede
 consultarse en su respectiva
 [documentación](https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html).
 
-### 5.1. Obtención de redes de palabras
+### Obtención de redes de palabras
 
 Para la creación de las redes de palabras y su posterior estudio, se usó
 la matriz de adjacencia calculada anteriormente (c.f., ver
@@ -146,18 +146,18 @@ la matriz de adjacencia calculada anteriormente (c.f., ver
 frente a lo cual realizamos vizualizaciones de redes de palabras y
 análisis de comunidades.
 
-### 5.2. Análisis alternando la inclusión de ANID
+### Análisis alternando la inclusión de ANID
 
 Se realizaron análisis incluyendo y excluyendo el término ANID, debido a
 su influencia producto de su repetición y conexión con otros términos.
 Los cuales pueden verse a continuación:
 
--   [Incluyendo
-    ANID](https://seremictci.github.io/labinstrumentos/articles/articles/network.html)
--   [Excluyendo
-    ANID](https://seremictci.github.io/labinstrumentos/articles/articles/network_sin_anid.html)
+- [Incluyendo
+  ANID](https://seremictci.github.io/labinstrumentos/articles/articles/network.html)
+- [Excluyendo
+  ANID](https://seremictci.github.io/labinstrumentos/articles/articles/network_sin_anid.html)
 
-### 5.3. Relación interdimensional mediante gráficos Sankey
+### Relación interdimensional mediante gráficos Sankey
 
 Para la exploración entre las diferentes dimensiones analizadas, se
 representaron los términos (así como los grupos de términos) usando
@@ -206,9 +206,9 @@ Lo que te dará el siguiente resultado.
 
     To cite package 'labinstrumentos' in publications use:
 
-      Matías Castillo Aguilar and Carlos Morales Quiroz (2021).
-      labinstrumentos: Datos del Laboratorio de Instrumentos. R package
-      version 0.0.0.9012. https://github.com/SEREMICTCI/labinstrumentos
+      Castillo Aguilar M, Morales Quiroz C (2021). _labinstrumentos: Datos
+      del Laboratorio de Instrumentos_. R package version 0.0.0.9012,
+      <https://github.com/SEREMICTCI/labinstrumentos>.
 
     A BibTeX entry for LaTeX users is
 
