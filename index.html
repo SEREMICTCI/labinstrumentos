@@ -104,14 +104,14 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level2">
-<h2 id="id_1-datos-y-análisis-del-laboratorio-de-instrumentos">1. Datos y análisis del laboratorio de instrumentos<a class="anchor" aria-label="anchor" href="#id_1-datos-y-an%C3%A1lisis-del-laboratorio-de-instrumentos"></a>
+<h2 id="datos-y-análisis-del-laboratorio-de-instrumentos">Datos y análisis del laboratorio de instrumentos<a class="anchor" aria-label="anchor" href="#datos-y-an%C3%A1lisis-del-laboratorio-de-instrumentos"></a>
 </h2>
 <!-- badges: start -->
 
 <p>Este es un paquete de <i class="fab fa-r-project"></i> que contiene los datos procesados del laboratorio de intrumentos, así como herramientas complementarias para su análisis y visualización.</p>
 </div>
 <div class="section level2">
-<h2 id="id_2-origen-de-los-datos">2. Origen de los datos<a class="anchor" aria-label="anchor" href="#id_2-origen-de-los-datos"></a>
+<h2 id="origen-de-los-datos">Origen de los datos<a class="anchor" aria-label="anchor" href="#origen-de-los-datos"></a>
 </h2>
 <p>El taller “Laboratorios de Instrumentos” tiene por objetivo generar una propuesta de recomendaciones a programas/instrumentos ANID teniendo en cuenta las brechas regionales y el sistema CTCI local. El análisis actual se focalizó en los los instrumentos más utilizados en la Macrozona Austral, seleccionando solamente aquellos investigadores principales con proyectos vigentes cuyo año de finalización sea desde el 2020 en adelante. A partir de los criterios anteriores, se obtuvieron un total de 4 programas con 6 instrumentos en total.</p>
 <table class="table">
@@ -245,11 +245,11 @@
 </table>
 </div>
 <div class="section level2">
-<h2 id="id_3-tratamiento-de-los-datos">3. Tratamiento de los datos<a class="anchor" aria-label="anchor" href="#id_3-tratamiento-de-los-datos"></a>
+<h2 id="tratamiento-de-los-datos">Tratamiento de los datos<a class="anchor" aria-label="anchor" href="#tratamiento-de-los-datos"></a>
 </h2>
 <p>Los talleres fueron desarrollados a partir de la metodología anterior, de la cual se obtuvo información de los problemas, causas, consecuencias, indicadores y soluciones para cada problema detectado. Esto fue compilado en formato largo y quedaron relacionados todos los problemas con sus causas, consecuencias, indicadores y soluciones, utilizando el problema como elemento pivot.</p>
 <div class="section level3">
-<h3 id="id_31-limpieza-manual">3.1. Limpieza manual<a class="anchor" aria-label="anchor" href="#id_31-limpieza-manual"></a>
+<h3 id="limpieza-manual">Limpieza manual<a class="anchor" aria-label="anchor" href="#limpieza-manual"></a>
 </h3>
 <p>Para cada columna se realizó una limpieza manual que consistió en 3 pasos:</p>
 <ol style="list-style-type: decimal">
@@ -259,7 +259,7 @@
 </ol>
 </div>
 <div class="section level3">
-<h3 id="id_32-limpieza-programática">3.2. Limpieza programática<a class="anchor" aria-label="anchor" href="#id_32-limpieza-program%C3%A1tica"></a>
+<h3 id="limpieza-programática">Limpieza programática<a class="anchor" aria-label="anchor" href="#limpieza-program%C3%A1tica"></a>
 </h3>
 <p>Descargamos los datos alojados en Google Sheets, con las últimas modificaciones del procesamiento manual de los datos.</p>
 <p>Seguido a esto se asignó nombres sintácticamente válidos a las columnas y se estandarizó el formato del texto, es decir, se eliminaron, puntos, comas y se transformó todo a minúsculas.</p>
@@ -267,21 +267,21 @@
 </div>
 </div>
 <div class="section level2">
-<h2 id="id_4-análisis-de-frecuencia-de-palabras">4. Análisis de frecuencia de palabras<a class="anchor" aria-label="anchor" href="#id_4-an%C3%A1lisis-de-frecuencia-de-palabras"></a>
+<h2 id="análisis-de-frecuencia-de-palabras">Análisis de frecuencia de palabras<a class="anchor" aria-label="anchor" href="#an%C3%A1lisis-de-frecuencia-de-palabras"></a>
 </h2>
-<p>Para detectar los temas que más se repiten, se obtuvieron frecuencias de palabras mediante la selección de términos que se repitieran. Este proceso se replicó con grupos de dos y tres palabras para obtener el contexto en el cual se dieron los términos y obtener temas más específicos. Los cuales pueden apreciarse en el segmento de <a href="https://seremictci.github.io/labinstrumentos/articles/articles/eda.html">análisis exploratorio</a>.</p>
+<p>Se obtuvieron frecuencias de palabras mediante la selección de palabras que se repitieran. Este proceso se replicó con grupos de dos y tres palabras para obtener el contexto en el cual se dieron los términos. Los cuales pueden apreciarse en el segmento de <a href="https://seremictci.github.io/labinstrumentos/articles/articles/eda.html">análisis exploratorio</a>.</p>
 </div>
 <div class="section level2">
-<h2 id="id_5-detección-de-posibles-comunidades-y-relaciones-entre-temas">5. Detección de posibles comunidades y relaciones entre temas<a class="anchor" aria-label="anchor" href="#id_5-detecci%C3%B3n-de-posibles-comunidades-y-relaciones-entre-temas"></a>
+<h2 id="detección-de-comunidades">Detección de comunidades<a class="anchor" aria-label="anchor" href="#detecci%C3%B3n-de-comunidades"></a>
 </h2>
-<p>Para el análisis de potenciales comunidades existentes en los datos se crearon matrices de adjacencia de los términos. Para esto se implementó una función que lo calcula para cada dimensión, la cual puede consultarse en su respectiva <a href="https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html">documentación</a>.</p>
+<p>Para el análisis de potenciales comunidades existentes en los datos se crearon las matrices de adjacencia de los términos. Para esto se implementó una función que lo calculó para cada dimensión, la cual puede consultarse en su respectiva <a href="https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html">documentación</a>.</p>
 <div class="section level3">
-<h3 id="id_51-obtención-de-redes-de-palabras">5.1. Obtención de redes de palabras<a class="anchor" aria-label="anchor" href="#id_51-obtenci%C3%B3n-de-redes-de-palabras"></a>
+<h3 id="obtención-de-redes-de-palabras">Obtención de redes de palabras<a class="anchor" aria-label="anchor" href="#obtenci%C3%B3n-de-redes-de-palabras"></a>
 </h3>
 <p>Para la creación de las redes de palabras y su posterior estudio, se usó la matriz de adjacencia calculada anteriormente (c.f., ver <a href="https://seremictci.github.io/labinstrumentos/reference/crear_redes_de_palabras.html">documentación</a>), frente a lo cual realizamos vizualizaciones de redes de palabras y análisis de comunidades.</p>
 </div>
 <div class="section level3">
-<h3 id="id_52-análisis-alternando-la-inclusión-de-anid">5.2. Análisis alternando la inclusión de ANID<a class="anchor" aria-label="anchor" href="#id_52-an%C3%A1lisis-alternando-la-inclusi%C3%B3n-de-anid"></a>
+<h3 id="análisis-alternando-la-inclusión-de-anid">Análisis alternando la inclusión de ANID<a class="anchor" aria-label="anchor" href="#an%C3%A1lisis-alternando-la-inclusi%C3%B3n-de-anid"></a>
 </h3>
 <p>Se realizaron análisis incluyendo y excluyendo el término ANID, debido a su influencia producto de su repetición y conexión con otros términos. Los cuales pueden verse a continuación:</p>
 <ul>
@@ -290,7 +290,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="id_53-relación-interdimensional-mediante-gráficos-sankey">5.3. Relación interdimensional mediante gráficos Sankey<a class="anchor" aria-label="anchor" href="#id_53-relaci%C3%B3n-interdimensional-mediante-gr%C3%A1ficos-sankey"></a>
+<h3 id="relación-interdimensional-mediante-gráficos-sankey">Relación interdimensional mediante gráficos Sankey<a class="anchor" aria-label="anchor" href="#relaci%C3%B3n-interdimensional-mediante-gr%C3%A1ficos-sankey"></a>
 </h3>
 <p>Para la exploración entre las diferentes dimensiones analizadas, se representaron los términos (así como los grupos de términos) usando gráficos Sankey, los cuales muestran la conexión existente entre dimensiones, pudiendo hallar vínculos entre grupos de palabras y conceptos, permitiendo un nivel de abstracción mayor. Estos pueden apreciarse <a href="https://seremictci.github.io/labinstrumentos/articles/articles/sankey.html">aquí</a>.</p>
 </div>
@@ -324,9 +324,9 @@
 <p>Lo que te dará el siguiente resultado.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>To cite package <span class="st">'labinstrumentos'</span> <span class="cf">in</span> publications use<span class="sc">:</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  Matías Castillo Aguilar and Carlos Morales <span class="fu">Quiroz</span> (<span class="dv">2021</span>).</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  labinstrumentos<span class="sc">:</span> Datos del Laboratorio de Instrumentos. R package</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  version <span class="dv">0</span>.<span class="dv">0</span>.<span class="dv">0</span>.<span class="fl">9012.</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>SEREMICTCI<span class="sc">/</span>labinstrumentos</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  Castillo Aguilar M, Morales Quiroz <span class="fu">C</span> (<span class="dv">2021</span>). _labinstrumentos<span class="sc">:</span> Datos</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  del Laboratorio de Instrumentos_. R package version <span class="dv">0</span>.<span class="dv">0</span>.<span class="fl">0.9012</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">&lt;</span>https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>SEREMICTCI<span class="sc">/</span>labinstrumentos<span class="sc">&gt;</span>.</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>A BibTeX entry <span class="cf">for</span> LaTeX users is</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
