@@ -14,6 +14,7 @@ en la macrozona teniendo en cuenta las brechas regionales y el sistema CTCI loca
 Useful links:
 \itemize{
   \item \url{https://github.com/SEREMICTCI/labinstrumentos}
+  \item \url{https://seremictci.github.io/labinstrumentos/}
   \item Report bugs at \url{https://github.com/SEREMICTCI/labinstrumentos/issues}
 }
 

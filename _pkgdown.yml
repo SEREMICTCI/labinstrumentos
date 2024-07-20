@@ -1,8 +1,9 @@
 url: https://seremictci.github.io/labinstrumentos
 
 template:
-  params:
-    bootswatch: flatly
+  bootstrap: 5
+
+lang: es
 
 toc:
   depth: 2
@@ -10,9 +11,7 @@ toc:
 navbar:
   structure:
     left: [home, reference, articles, datos]
-    right: [news, github]
-
-
+    right: [github]
   components:
     home:
       icon: fa fa-home fa-lg
@@ -21,9 +20,6 @@ navbar:
       icon: fab fa-r-project fa-lg
       text: Documentación
       href: reference/index.html
-    news:
-      icon: fas fa-history fa-lg
-      href: news/index.html
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/SEREMICTCI/labinstrumentos/
@@ -32,17 +28,17 @@ navbar:
       text: Artículos
       menu:
       - text: Origen de los datos
-        href: articles/articles/Data.html
+        href: articles/Data.html
+      - text: Metodología
+        href: articles/methods.html
       - text: Análisis exploratorio
-        href: articles/articles/eda.html
-      - text: Análisis de redes
-        menu:
-        - text: Con ANID
-          href: articles/articles/network.html
-        - text: Sin ANID
-          href: articles/articles/network_sin_anid.html
+        href: articles/eda.html
+      - text: Analisis de redes con ANID
+        href: articles/network.html
+      - text: Analisis de redes sin ANID
+        href: articles/network_sin_anid.html
       - text: Diagramas de Sankey
-        href: articles/articles/sankey.html
+        href: articles/sankey.html
     datos:
       icon: fas fa-database fa-lg
       text: Datos
@@ -56,6 +52,7 @@ articles:
   desc: Documentación vinculada al análisis de los datos del laboratorio de instrumentos.
   contents:
   - articles/Data
+  - articles/methods
   - articles/eda
   - articles/network
   - articles/network_sin_anid
